@@ -1,4 +1,4 @@
-package competition.wondev;
+package wondev;
 
 import java.util.*;
 import java.io.*;
