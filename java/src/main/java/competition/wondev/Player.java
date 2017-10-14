@@ -1,8 +1,6 @@
-package wondev;
+package competition.wondev;
 
 import java.util.*;
-import java.io.*;
-import java.math.*;
 
 /**
  * Auto-generated code below aims at helping you parse the standard input
@@ -10,7 +8,7 @@ import java.math.*;
  **/
 class Player {
 
-    public static enum CardinalPoint {
+    public enum CardinalPoint {
         N, NE, E, SE, S, SW, W, NW
     }
 
@@ -74,8 +72,9 @@ class Player {
                     return startCase.y > 0 ? grid[startCase.x][startCase.y - 1] : null;
                 case NW:
                     return startCase.x > 0 && startCase.y > 0 ? grid[startCase.x - 1][startCase.y - 1] : null;
+                default:
+                    return null;
             }
-            return null;
         }
 
         public float getScoreForAction(Case startCase, String actionType, CardinalPoint dir1, CardinalPoint dir2, int depth) {
@@ -142,6 +141,7 @@ class Player {
             for (int i = 0; i < unitsPerPlayer; i++) {
                 int unitY = in.nextInt();
                 int unitX = in.nextInt(); // inversion par rapport au jeu x,y en haut à gauche
+                // FUNC
                 players[i] = grid.getCaseAt(unitX, unitY).markPlayerCase();
             }
 
@@ -149,24 +149,27 @@ class Player {
             for (int i = 0; i < unitsPerPlayer; i++) {
                 int otherY = in.nextInt();
                 int otherX = in.nextInt();
+                // FUNC
                 opponents[i] = grid.getCaseAt(otherX, otherY).markOpponentCase();
             }
 
             System.err.println(grid.toString());
 
-            String actions[] = new String[unitsPerPlayer];
+            String actions[] = new String[unitsPerPlayer]; //FUNC
             int legalActions = in.nextInt();
+            float maxScore[] = new float[unitsPerPlayer]; // FUNC
             for (int i = 0; i < legalActions; i++) {
                 String atype = in.next();
                 int index = in.nextInt();
                 String dir1 = in.next();
                 String dir2 = in.next();
                 String action = atype + " " + index + " " + dir1 + " " + dir2;
-                float maxScore = 0;
+
+                //FUNC
                 float score = grid.getScoreForAction(players[index], atype, CardinalPoint.valueOf(dir1), CardinalPoint.valueOf(dir2), 2);
                 System.err.println(action + " : " + score);
-                if (actions[index] == null || score > maxScore) {
-                    maxScore = score;
+                if (actions[index] == null || score > maxScore[index]) {
+                    maxScore[index] = score;
                     actions[index] = action;
                 }
             }
