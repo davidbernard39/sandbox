@@ -54,6 +54,17 @@ class Player {
             return this.grid[x][y];
         }
 
+        public int getNeighborHigherLevel(Case startCase) {
+            int max = 0;
+            for (CardinalPoint dir : CardinalPoint.values()) {
+                Case neighbor = getCaseInDir(startCase, dir);
+                if (neighbor != null && neighbor.height > max) {
+                    max = neighbor.height;
+                }
+            }
+            return max;
+        }
+
         public Case getCaseInDir(Case startCase, CardinalPoint dir) {
             switch (dir) {
                 case N:
@@ -77,26 +88,31 @@ class Player {
             }
         }
 
-        public float getScoreForAction(Case startCase, String actionType, CardinalPoint dir1, CardinalPoint dir2, int depth) {
-            float result = 1;
-            Case nextCase = getCaseInDir(startCase, dir1);
-            result *= (nextCase.height == 0 ? 1 : nextCase.height);
-            Case nextBuild = getCaseInDir(nextCase, dir2);
-            result *= (nextBuild.height == 0 ? 2 : nextBuild.height < 3 ? nextBuild.height : 0);
-            int countNeighbors = 0;
-            for (CardinalPoint cp : CardinalPoint.values()) {
-                Case caseAtCp = getCaseInDir(nextCase, cp);
-                if (caseAtCp != null) {
-                    countNeighbors++;
-                    if (depth <2) {
-                        depth++;
-                        for (CardinalPoint cpb : CardinalPoint.values()) {
-                            result += getScoreForAction(caseAtCp, "MOVE&BUILD", cp, cpb, depth);
-                        }
-                    }
+        public float getMoveScore(Case startCase, CardinalPoint dir) {
+            Case destCase = getCaseInDir(startCase, dir);
+            if (destCase.opponent || destCase.player || destCase.height > startCase.height+1) {
+                return 0f;
+            }
+            return 1f + destCase.height;
+        }
+
+        public float getBuildScore(Case startCase, CardinalPoint dir) {
+            Case destCase = getCaseInDir(startCase, dir);
+            if (destCase.opponent || destCase.player || destCase.height > startCase.height+1) {
+                return 0f;
+            } else {
+                int neighborHigherLevel = getNeighborHigherLevel(destCase);
+                if (neighborHigherLevel > 1) {
+                    return neighborHigherLevel * 1.0f;
                 }
             }
-            result *= countNeighbors;
+            return 1f;
+        }
+
+        public float getScoreForAction(Case startCase, String actionType, CardinalPoint dir1, CardinalPoint dir2) {
+            float result = 50f;
+            result *= getMoveScore(startCase, dir1);
+            result *= getBuildScore(getCaseInDir(startCase, dir1), dir2);
             return result;
         }
 
@@ -127,7 +143,6 @@ class Player {
         int unitsPerPlayer = in.nextInt();
 
         Grid grid = new Grid(size);
-
         // game loop
         while (true) {
             for (int i = 0; i < size; i++) {
@@ -155,9 +170,9 @@ class Player {
 
             System.err.println(grid.toString());
 
-            String actions[] = new String[unitsPerPlayer]; //FUNC
+            String myaction = null;
             int legalActions = in.nextInt();
-            float maxScore[] = new float[unitsPerPlayer]; // FUNC
+            float maxScore = 0; // FUNC
             for (int i = 0; i < legalActions; i++) {
                 String atype = in.next();
                 int index = in.nextInt();
@@ -165,20 +180,21 @@ class Player {
                 String dir2 = in.next();
                 String action = atype + " " + index + " " + dir1 + " " + dir2;
 
-                //FUNC
-                float score = grid.getScoreForAction(players[index], atype, CardinalPoint.valueOf(dir1), CardinalPoint.valueOf(dir2), 2);
-                System.err.println(action + " : " + score);
-                if (actions[index] == null || score > maxScore[index]) {
-                    maxScore[index] = score;
-                    actions[index] = action;
+                if (atype.startsWith("MOVE")) {
+                    float score = grid.getScoreForAction(players[index], atype, CardinalPoint.valueOf(dir1), CardinalPoint.valueOf(dir2));
+                    System.err.println(action + " : " + score);
+                    if (score > maxScore) {
+                        maxScore = score;
+                        myaction = action;
+                    }
                 }
+
             }
 
             // Write an action using System.out.println()
             // To debug: System.err.println("Debug messages...");
-            for (int i = 0; i < unitsPerPlayer; i++) {
-                System.out.println(actions[i]);
-            }
+            System.out.println(myaction);
+
         }
     }
 }
