@@ -1,0 +1,1350 @@
+
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 0 enemyScore2: 0 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -3947 y: 2108 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 148 y: -4473 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 5 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 2427 y: -1764 vx: 0 vy: 0 extra: 5 extra2: -1
+
+002313
+003313
+004313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 0 enemyScore2: 0 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -3605 y: 1900 vx: 273 vy: -166 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 406 y: -4167 vx: 206 vy: 245 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 5 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 2427 y: -1764 vx: 0 vy: 0 extra: 5 extra2: -1
+
+005313
+006313
+007313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 0 enemyScore2: 0 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -2990 y: 1526 vx: 492 vy: -299 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 869 y: -3616 vx: 371 vy: 441 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 5 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 2427 y: -1764 vx: 0 vy: 0 extra: 5 extra2: -1
+
+008313
+009313
+010313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 0 enemyScore2: 0 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -2156 y: 1019 vx: 667 vy: -405 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1498 y: -2869 vx: 503 vy: 598 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 5 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 2427 y: -1764 vx: 0 vy: 0 extra: 5 extra2: -1
+
+011313
+012313
+013313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 0 enemyScore2: 1 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -1147 y: 406 vx: 807 vy: -490 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2258 y: -1965 vx: 608 vy: 723 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 5 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 2427 y: -1764 vx: 0 vy: 0 extra: 4 extra2: -1
+
+014313
+015313
+016313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 0 enemyScore2: 1 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 2 y: -292 vx: 919 vy: -558 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 3123 y: -936 vx: 692 vy: 823 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 5 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 2427 y: -1764 vx: 0 vy: 0 extra: 4 extra2: -1
+
+017313
+018313
+019313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 0 enemyScore2: 1 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 1263 y: -1058 vx: 1009 vy: -612 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 3558 y: -419 vx: 348 vy: 413 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 5 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 2427 y: -1764 vx: 0 vy: 0 extra: 4 extra2: -1
+
+020313
+021313
+022313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 1 enemyScore2: 1 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 2614 y: -1877 vx: 1081 vy: -656 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 3649 y: -312 vx: 72 vy: 85 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 5 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 2427 y: -1764 vx: 0 vy: 0 extra: 3 extra2: -1
+
+023313
+024313
+025313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 1 enemyScore2: 1 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 3353 y: -2326 vx: 591 vy: -359 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 3463 y: -533 vx: -148 vy: -177 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 5 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 2427 y: -1764 vx: 0 vy: 0 extra: 3 extra2: -1
+
+026313
+027313
+028313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 1 enemyScore2: 1 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 3602 y: -2477 vx: 199 vy: -121 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 3057 y: -1016 vx: -324 vy: -386 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 5 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 2427 y: -1764 vx: 0 vy: 0 extra: 3 extra2: -1
+
+029313
+030313
+031313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 1 enemyScore2: 2 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 3459 y: -2390 vx: -114 vy: 69 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2475 y: -1708 vx: -465 vy: -554 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 5 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 2427 y: -1764 vx: 0 vy: 0 extra: 2 extra2: -1
+
+032313
+033313
+034313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 1 enemyScore2: 2 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 3003 y: -2114 vx: -365 vy: 221 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1750 y: -2566 vx: -580 vy: -686 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 5 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 2427 y: -1764 vx: 0 vy: 0 extra: 2 extra2: -1
+
+035313
+036313
+037313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 2 enemyScore2: 2 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 2296 y: -1685 vx: -565 vy: 343 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1428 y: -2946 vx: -258 vy: -304 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 5 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 2427 y: -1764 vx: 0 vy: 0 extra: 1 extra2: -1
+
+038313
+039313
+040313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 3 enemyScore2: 2 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 2074 y: -1549 vx: -178 vy: 109 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1428 y: -2944 vx: 0 vy: 1 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 6 unitType: 4 player: -1 mass: -1.0 radius: 850 x: -790 y: -2894 vx: 0 vy: 0 extra: 9 extra2: -1
+
+041313
+042313
+043313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 3 enemyScore2: 2 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 1534 y: -1610 vx: -432 vy: -49 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1028 y: -2934 vx: -320 vy: 8 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 6 unitType: 4 player: -1 mass: -1.0 radius: 850 x: -790 y: -2894 vx: 0 vy: 0 extra: 9 extra2: -1
+
+044313
+045313
+046313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 3 enemyScore2: 2 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 752 y: -1852 vx: -626 vy: -194 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 308 y: -2917 vx: -576 vy: 13 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 6 unitType: 4 player: -1 mass: -1.0 radius: 850 x: -790 y: -2894 vx: 0 vy: 0 extra: 9 extra2: -1
+
+047313
+048313
+049313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 3 enemyScore2: 3 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -196 y: -2256 vx: -645 vy: -164 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -677 y: -2909 vx: -901 vy: -154 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 6 unitType: 4 player: -1 mass: -1.0 radius: 850 x: -790 y: -2894 vx: 0 vy: 0 extra: 8 extra2: -1
+
+050313
+051313
+052313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 4 enemyScore2: 3 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -1114 y: -2713 vx: -734 vy: -365 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -1975 y: -3010 vx: -1038 vy: -81 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 6 unitType: 4 player: -1 mass: -1.0 radius: 850 x: -790 y: -2894 vx: 0 vy: 0 extra: 7 extra2: -1
+
+053313
+054313
+055313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 5 enemyScore2: 3 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -1499 y: -3273 vx: -308 vy: -448 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -2615 y: -3052 vx: -512 vy: -34 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 6 unitType: 4 player: -1 mass: -1.0 radius: 850 x: -790 y: -2894 vx: 0 vy: 0 extra: 6 extra2: -1
+
+056313
+057313
+058313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 5 enemyScore2: 3 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -1454 y: -3532 vx: 36 vy: -208 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -2728 y: -3051 vx: -91 vy: 0 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 6 unitType: 4 player: -1 mass: -1.0 radius: 850 x: -790 y: -2894 vx: 0 vy: 0 extra: 6 extra2: -1
+
+059313
+060313
+061313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 6 enemyScore2: 3 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -1130 y: -3463 vx: 260 vy: 55 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -2420 y: -3019 vx: 246 vy: 26 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 6 unitType: 4 player: -1 mass: -1.0 radius: 850 x: -790 y: -2894 vx: 0 vy: 0 extra: 5 extra2: -1
+
+062313
+063313
+064313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 7 enemyScore2: 3 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -665 y: -3065 vx: 372 vy: 319 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -1775 y: -2962 vx: 516 vy: 45 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 6 unitType: 4 player: -1 mass: -1.0 radius: 850 x: -790 y: -2894 vx: 0 vy: 0 extra: 4 extra2: -1
+
+065313
+066313
+067313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 8 enemyScore2: 4 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -235 y: -2374 vx: 508 vy: 580 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -1154 y: -2938 vx: 333 vy: -9 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 6 unitType: 4 player: -1 mass: -1.0 radius: 850 x: -790 y: -2894 vx: 0 vy: 0 extra: 2 extra2: -1
+
+068313
+069313
+070313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 8 enemyScore2: 5 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -19 y: -2067 vx: 173 vy: 245 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -424 y: -2899 vx: 584 vy: 31 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 6 unitType: 4 player: -1 mass: -1.0 radius: 850 x: -790 y: -2894 vx: 0 vy: 0 extra: 1 extra2: -1
+
+071313
+072313
+073313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 8 enemyScore2: 6 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -108 y: -2075 vx: -52 vy: 68 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -250 y: -2902 vx: 119 vy: -77 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 7 unitType: 4 player: -1 mass: -1.0 radius: 600 x: 918 y: -2856 vx: 0 vy: 0 extra: 4 extra2: -1
+
+074313
+075313
+076313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 8 enemyScore2: 6 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 167 y: -2156 vx: 222 vy: -38 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 260 y: -3056 vx: 405 vy: -151 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 7 unitType: 4 player: -1 mass: -1.0 radius: 600 x: 918 y: -2856 vx: 0 vy: 0 extra: 4 extra2: -1
+
+077313
+078313
+079313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 9 enemyScore2: 7 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 659 y: -2389 vx: 377 vy: -130 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1070 y: -3168 vx: 665 vy: -146 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 7 unitType: 4 player: -1 mass: -1.0 radius: 600 x: 918 y: -2856 vx: 0 vy: 0 extra: 2 extra2: -1
+
+080313
+081313
+082313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 10 enemyScore2: 7 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 1019 y: -2505 vx: 264 vy: -51 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1771 y: -3318 vx: 584 vy: -162 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 7 unitType: 4 player: -1 mass: -1.0 radius: 600 x: 918 y: -2856 vx: 0 vy: 0 extra: 1 extra2: -1
+
+083313
+084313
+085313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 11 enemyScore2: 7 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 1172 y: -2940 vx: 123 vy: -348 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2003 y: -3290 vx: 186 vy: 23 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 8 unitType: 4 player: -1 mass: -1.0 radius: 750 x: 437 y: -2968 vx: 0 vy: 0 extra: 7 extra2: -1
+
+086313
+087313
+088313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 12 enemyScore2: 7 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 895 y: -3303 vx: -221 vy: -291 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1797 y: -3186 vx: -165 vy: 83 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 8 unitType: 4 player: -1 mass: -1.0 radius: 750 x: 437 y: -2968 vx: 0 vy: 0 extra: 6 extra2: -1
+
+089313
+090313
+091313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 13 enemyScore2: 7 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 351 y: -3358 vx: -435 vy: -44 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1237 y: -3040 vx: -448 vy: 117 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 8 unitType: 4 player: -1 mass: -1.0 radius: 750 x: 437 y: -2968 vx: 0 vy: 0 extra: 5 extra2: -1
+
+092313
+093313
+094313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 14 enemyScore2: 8 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -275 y: -3109 vx: -581 vy: 171 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 668 y: -2789 vx: -375 vy: 229 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 8 unitType: 4 player: -1 mass: -1.0 radius: 750 x: 437 y: -2968 vx: 0 vy: 0 extra: 3 extra2: -1
+
+095313
+096313
+097313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 14 enemyScore2: 9 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -724 y: -2937 vx: -471 vy: 104 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 237 y: -2728 vx: -232 vy: 82 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 8 unitType: 4 player: -1 mass: -1.0 radius: 750 x: 437 y: -2968 vx: 0 vy: 0 extra: 2 extra2: -1
+
+098313
+099313
+100313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 14 enemyScore2: 10 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -795 y: -2844 vx: -57 vy: 75 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 261 y: -2953 vx: 19 vy: -180 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 8 unitType: 4 player: -1 mass: -1.0 radius: 750 x: 437 y: -2968 vx: 0 vy: 0 extra: 1 extra2: -1
+
+101313
+102313
+103313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 14 enemyScore2: 11 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -454 y: -2809 vx: 273 vy: 28 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 679 y: -3167 vx: 334 vy: -171 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 9 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 2810 y: -1051 vx: 0 vy: 0 extra: 8 extra2: -1
+
+104313
+105313
+106313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 14 enemyScore2: 11 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 171 y: -2591 vx: 500 vy: 174 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1297 y: -3056 vx: 494 vy: 89 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 9 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 2810 y: -1051 vx: 0 vy: 0 extra: 8 extra2: -1
+
+107313
+108313
+109313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 14 enemyScore2: 11 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 1016 y: -2215 vx: 676 vy: 300 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2032 y: -2648 vx: 588 vy: 327 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 9 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 2810 y: -1051 vx: 0 vy: 0 extra: 8 extra2: -1
+
+110313
+111313
+112313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 14 enemyScore2: 11 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 2028 y: -1697 vx: 809 vy: 414 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2795 y: -1961 vx: 611 vy: 549 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 9 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 2810 y: -1051 vx: 0 vy: 0 extra: 8 extra2: -1
+
+113313
+114313
+115313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 15 enemyScore2: 11 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 2753 y: -894 vx: 574 vy: 644 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 3805 y: -1146 vx: 814 vy: 650 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 9 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 2810 y: -1051 vx: 0 vy: 0 extra: 7 extra2: -1
+
+116313
+117313
+118313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 16 enemyScore2: 11 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 3444 y: -629 vx: 431 vy: 193 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 4240 y: -455 vx: 470 vy: 571 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 9 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 2810 y: -1051 vx: 0 vy: 0 extra: 6 extra2: -1
+
+119313
+120313
+121313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 16 enemyScore2: 11 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 3542 y: -658 vx: 78 vy: -23 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 4341 y: -38 vx: 81 vy: 334 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 9 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 2810 y: -1051 vx: 0 vy: 0 extra: 6 extra2: -1
+
+122313
+123313
+124313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 17 enemyScore2: 11 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 3268 y: -870 vx: -220 vy: -170 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 4088 y: 75 vx: -202 vy: 91 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 9 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 2810 y: -1051 vx: 0 vy: 0 extra: 5 extra2: -1
+
+125313
+126313
+127313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 18 enemyScore2: 11 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 2676 y: -1187 vx: -474 vy: -254 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 3586 y: -98 vx: -402 vy: -139 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 9 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 2810 y: -1051 vx: 0 vy: 0 extra: 4 extra2: -1
+
+128313
+129313
+130313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 19 enemyScore2: 12 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 2463 y: -1182 vx: -392 vy: -293 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2951 y: -521 vx: -286 vy: -42 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 9 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 2810 y: -1051 vx: 0 vy: 0 extra: 2 extra2: -1
+
+131313
+132313
+133313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 20 enemyScore2: 13 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 2260 y: -1589 vx: -170 vy: -336 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2747 y: -694 vx: -155 vy: -128 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 10 unitType: 4 player: -1 mass: -1.0 radius: 600 x: 206 y: -2993 vx: 0 vy: 0 extra: 4 extra2: -1
+
+134313
+135313
+136313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 20 enemyScore2: 13 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 1760 y: -2151 vx: -400 vy: -449 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2295 y: -1090 vx: -361 vy: -317 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 10 unitType: 4 player: -1 mass: -1.0 radius: 600 x: 206 y: -2993 vx: 0 vy: 0 extra: 4 extra2: -1
+
+137313
+138313
+139313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 20 enemyScore2: 13 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 1008 y: -2791 vx: -601 vy: -512 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1638 y: -1676 vx: -525 vy: -469 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 10 unitType: 4 player: -1 mass: -1.0 radius: 600 x: 206 y: -2993 vx: 0 vy: 0 extra: 4 extra2: -1
+
+140313
+141313
+142313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 21 enemyScore2: 13 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 19 y: -3401 vx: -791 vy: -488 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 819 y: -2416 vx: -656 vy: -592 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 10 unitType: 4 player: -1 mass: -1.0 radius: 600 x: 206 y: -2993 vx: 0 vy: 0 extra: 3 extra2: -1
+
+143313
+144313
+145313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 21 enemyScore2: 14 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -764 y: -3664 vx: -830 vy: -389 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 30 y: -3143 vx: -428 vy: -403 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 10 unitType: 4 player: -1 mass: -1.0 radius: 600 x: 206 y: -2993 vx: 0 vy: 0 extra: 2 extra2: -1
+
+146313
+147313
+148313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 21 enemyScore2: 15 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -1265 y: -3825 vx: -401 vy: -129 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -94 y: -3287 vx: -99 vy: -115 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 10 unitType: 4 player: -1 mass: -1.0 radius: 600 x: 206 y: -2993 vx: 0 vy: 0 extra: 1 extra2: -1
+
+149313
+150313
+151313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 21 enemyScore2: 16 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -1318 y: -3757 vx: -42 vy: 54 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 93 y: -3122 vx: 149 vy: 132 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 11 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 1514 y: -2590 vx: 0 vy: 0 extra: 5 extra2: -1
+
+152313
+153313
+154313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 21 enemyScore2: 16 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -990 y: -3551 vx: 262 vy: 165 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 617 y: -2850 vx: 419 vy: 218 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 11 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 1514 y: -2590 vx: 0 vy: 0 extra: 5 extra2: -1
+
+155313
+156313
+157313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 21 enemyScore2: 17 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -355 y: -3243 vx: 508 vy: 247 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1420 y: -2521 vx: 643 vy: 263 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 11 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 1514 y: -2590 vx: 0 vy: 0 extra: 4 extra2: -1
+
+158313
+159313
+160313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 21 enemyScore2: 17 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 531 y: -2864 vx: 708 vy: 303 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2385 y: -2495 vx: 772 vy: 21 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 11 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 1514 y: -2590 vx: 0 vy: 0 extra: 4 extra2: -1
+
+161313
+162313
+163313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 22 enemyScore2: 17 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 1624 y: -2454 vx: 875 vy: 328 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2759 y: -2517 vx: 299 vy: -18 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 11 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 1514 y: -2590 vx: 0 vy: 0 extra: 3 extra2: -1
+
+164313
+165313
+166313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 23 enemyScore2: 17 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 1966 y: -2405 vx: 74 vy: 62 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2940 y: -2590 vx: 345 vy: -81 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 11 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 1514 y: -2590 vx: 0 vy: 0 extra: 2 extra2: -1
+
+167313
+168313
+169313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 24 enemyScore2: 17 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 1670 y: -2495 vx: -237 vy: -72 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2885 y: -2671 vx: -44 vy: -65 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 11 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 1514 y: -2590 vx: 0 vy: 0 extra: 1 extra2: -1
+
+170313
+171313
+172313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 25 enemyScore2: 17 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 1091 y: -2775 vx: -463 vy: -224 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2442 y: -2712 vx: -355 vy: -33 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 12 unitType: 4 player: -1 mass: -1.0 radius: 850 x: 1263 y: -2721 vx: 0 vy: 0 extra: 9 extra2: -1
+
+173313
+174313
+175313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 26 enemyScore2: 18 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 928 y: -2892 vx: -454 vy: -142 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1769 y: -2736 vx: -215 vy: 30 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 12 unitType: 4 player: -1 mass: -1.0 radius: 850 x: 1263 y: -2721 vx: 0 vy: 0 extra: 7 extra2: -1
+
+176313
+177313
+178313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 27 enemyScore2: 19 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 498 y: -2918 vx: -376 vy: -27 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1486 y: -2628 vx: -194 vy: 93 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 12 unitType: 4 player: -1 mass: -1.0 radius: 850 x: 1263 y: -2721 vx: 0 vy: 0 extra: 5 extra2: -1
+
+179313
+180313
+181313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 27 enemyScore2: 20 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 252 y: -2925 vx: -328 vy: -47 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1180 y: -2609 vx: -114 vy: 56 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 12 unitType: 4 player: -1 mass: -1.0 radius: 850 x: 1263 y: -2721 vx: 0 vy: 0 extra: 4 extra2: -1
+
+182313
+183313
+184313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 27 enemyScore2: 21 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 316 y: -2893 vx: 51 vy: 26 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1304 y: -2874 vx: 99 vy: -212 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 12 unitType: 4 player: -1 mass: -1.0 radius: 850 x: 1263 y: -2721 vx: 0 vy: 0 extra: 3 extra2: -1
+
+185313
+186313
+187313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 28 enemyScore2: 22 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 569 y: -2808 vx: 90 vy: 61 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1491 y: -2687 vx: 262 vy: 157 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 12 unitType: 4 player: -1 mass: -1.0 radius: 850 x: 1263 y: -2721 vx: 0 vy: 0 extra: 1 extra2: -1
+
+188313
+189313
+190313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 29 enemyScore2: 23 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 696 y: -2751 vx: 24 vy: 34 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1718 y: -2535 vx: 258 vy: 133 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 13 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 2129 y: -2114 vx: 0 vy: 0 extra: 8 extra2: -1
+
+191313
+192313
+193313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 29 enemyScore2: 24 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 1086 y: -2555 vx: 312 vy: 157 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2255 y: -2116 vx: 430 vy: 335 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 13 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 2129 y: -2114 vx: 0 vy: 0 extra: 7 extra2: -1
+
+194313
+195313
+196313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 30 enemyScore2: 25 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 1701 y: -2288 vx: 292 vy: 72 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2350 y: -1729 vx: 276 vy: 451 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 13 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 2129 y: -2114 vx: 0 vy: 0 extra: 5 extra2: -1
+
+197313
+198313
+199313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 31 enemyScore2: 25 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 2115 y: -2297 vx: 307 vy: -30 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2675 y: -1393 vx: 285 vy: 292 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 13 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 2129 y: -2114 vx: 0 vy: 0 extra: 4 extra2: -1
+
+200313
+201313
+202313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 32 enemyScore2: 25 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 2367 y: -2075 vx: 122 vy: 41 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2804 y: -1273 vx: 183 vy: 233 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 13 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 2129 y: -2114 vx: 0 vy: 0 extra: 3 extra2: -1
+
+203313
+204313
+205313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 33 enemyScore2: 25 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 2094 y: -2099 vx: -218 vy: -19 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2737 y: -1352 vx: -54 vy: -63 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 13 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 2129 y: -2114 vx: 0 vy: 0 extra: 2 extra2: -1
+
+206313
+207313
+208313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 34 enemyScore2: 26 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 2143 y: -2425 vx: -22 vy: -349 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2535 y: -1579 vx: -102 vy: -92 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 14 unitType: 4 player: -1 mass: -1.0 radius: 700 x: -1063 y: -2805 vx: 0 vy: 0 extra: 6 extra2: -1
+
+209313
+210313
+211313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 34 enemyScore2: 26 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 1724 y: -2821 vx: -335 vy: -317 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2054 y: -1800 vx: -384 vy: -177 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 14 unitType: 4 player: -1 mass: -1.0 radius: 700 x: -1063 y: -2805 vx: 0 vy: 0 extra: 6 extra2: -1
+
+212313
+213313
+214313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 34 enemyScore2: 26 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 989 y: -3136 vx: -588 vy: -252 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1289 y: -2100 vx: -612 vy: -240 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 14 unitType: 4 player: -1 mass: -1.0 radius: 700 x: -1063 y: -2805 vx: 0 vy: 0 extra: 6 extra2: -1
+
+215313
+216313
+217313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 34 enemyScore2: 26 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 6 y: -3324 vx: -786 vy: -151 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 294 y: -2455 vx: -796 vy: -284 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 14 unitType: 4 player: -1 mass: -1.0 radius: 700 x: -1063 y: -2805 vx: 0 vy: 0 extra: 6 extra2: -1
+
+218313
+219313
+220313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 34 enemyScore2: 27 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -1213 y: -3498 vx: -999 vy: -204 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -816 y: -2642 vx: -864 vy: -85 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 14 unitType: 4 player: -1 mass: -1.0 radius: 700 x: -1063 y: -2805 vx: 0 vy: 0 extra: 5 extra2: -1
+
+221313
+222313
+223313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 34 enemyScore2: 27 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -2256 y: -3600 vx: -869 vy: -160 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -1885 y: -2658 vx: -821 vy: 65 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 14 unitType: 4 player: -1 mass: -1.0 radius: 700 x: -1063 y: -2805 vx: 0 vy: 0 extra: 5 extra2: -1
+
+224313
+225313
+226313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 34 enemyScore2: 27 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -2792 y: -3538 vx: -429 vy: 49 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -2312 y: -2663 vx: -342 vy: -4 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 14 unitType: 4 player: -1 mass: -1.0 radius: 700 x: -1063 y: -2805 vx: 0 vy: 0 extra: 5 extra2: -1
+
+227313
+228313
+229313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 34 enemyScore2: 27 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -2853 y: -3333 vx: -49 vy: 164 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -2257 y: -2712 vx: 44 vy: -39 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 14 unitType: 4 player: -1 mass: -1.0 radius: 700 x: -1063 y: -2805 vx: 0 vy: 0 extra: 5 extra2: -1
+
+230313
+231313
+232313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 34 enemyScore2: 28 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -2576 y: -3099 vx: 190 vy: 164 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -1757 y: -2739 vx: 432 vy: 2 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 14 unitType: 4 player: -1 mass: -1.0 radius: 700 x: -1063 y: -2805 vx: 0 vy: 0 extra: 4 extra2: -1
+
+233313
+234313
+235313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 34 enemyScore2: 29 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -1993 y: -2859 vx: 466 vy: 192 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -927 y: -2775 vx: 664 vy: -29 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 14 unitType: 4 player: -1 mass: -1.0 radius: 700 x: -1063 y: -2805 vx: 0 vy: 0 extra: 3 extra2: -1
+
+236313
+237313
+238313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 35 enemyScore2: 30 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -1357 y: -2625 vx: 356 vy: 200 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -424 y: -2909 vx: 555 vy: -120 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 14 unitType: 4 player: -1 mass: -1.0 radius: 700 x: -1063 y: -2805 vx: 0 vy: 0 extra: 1 extra2: -1
+
+239313
+240313
+241313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 36 enemyScore2: 30 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -874 y: -2547 vx: 291 vy: 101 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -49 y: -3052 vx: 395 vy: -153 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 15 unitType: 4 player: -1 mass: -1.0 radius: 700 x: -1485 y: -2607 vx: 0 vy: 0 extra: 6 extra2: -1
+
+242313
+243313
+244313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 37 enemyScore2: 30 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -981 y: -2485 vx: -86 vy: 50 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -36 y: -3087 vx: 10 vy: -28 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 15 unitType: 4 player: -1 mass: -1.0 radius: 700 x: -1485 y: -2607 vx: 0 vy: 0 extra: 5 extra2: -1
+
+245313
+246313
+247313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 38 enemyScore2: 30 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -1456 y: -2529 vx: -380 vy: -35 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -406 y: -2989 vx: -296 vy: 78 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 15 unitType: 4 player: -1 mass: -1.0 radius: 700 x: -1485 y: -2607 vx: 0 vy: 0 extra: 4 extra2: -1
+
+248313
+249313
+250313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 39 enemyScore2: 31 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -1975 y: -2939 vx: -416 vy: -328 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -1079 y: -2778 vx: -538 vy: 169 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 15 unitType: 4 player: -1 mass: -1.0 radius: 700 x: -1485 y: -2607 vx: 0 vy: 0 extra: 2 extra2: -1
+
+251313
+252313
+253313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 39 enemyScore2: 32 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -2463 y: -3163 vx: -451 vy: -197 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -1583 y: -2334 vx: -343 vy: 373 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 15 unitType: 4 player: -1 mass: -1.0 radius: 700 x: -1485 y: -2607 vx: 0 vy: 0 extra: 1 extra2: -1
+
+254313
+255313
+256313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 39 enemyScore2: 33 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -2566 y: -3162 vx: -83 vy: 1 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -1791 y: -2337 vx: -166 vy: -3 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 16 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 353 y: -2979 vx: 0 vy: 0 extra: 8 extra2: -1
+
+257313
+258313
+259313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 39 enemyScore2: 33 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -2250 y: -3136 vx: 253 vy: 21 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -1574 y: -2455 vx: 174 vy: -94 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 16 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 353 y: -2979 vx: 0 vy: 0 extra: 8 extra2: -1
+
+260313
+261313
+262313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 39 enemyScore2: 33 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -1640 y: -3126 vx: 415 vy: -53 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -972 y: -2619 vx: 554 vy: -70 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 16 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 353 y: -2979 vx: 0 vy: 0 extra: 8 extra2: -1
+
+263313
+264313
+265313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 39 enemyScore2: 34 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: -826 y: -3150 vx: 651 vy: -19 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: -32 y: -2794 vx: 752 vy: -140 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 16 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 353 y: -2979 vx: 0 vy: 0 extra: 7 extra2: -1
+
+266313
+267313
+268313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 40 enemyScore2: 35 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 221 y: -3112 vx: 837 vy: 31 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1081 y: -3107 vx: 890 vy: -251 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 16 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 353 y: -2979 vx: 0 vy: 0 extra: 5 extra2: -1
+
+269313
+270313
+271313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 41 enemyScore2: 35 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 938 y: -2775 vx: 539 vy: 271 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1979 y: -3311 vx: 753 vy: -165 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 16 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 353 y: -2979 vx: 0 vy: 0 extra: 4 extra2: -1
+
+272313
+273313
+274313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 41 enemyScore2: 35 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 1099 y: -2636 vx: 129 vy: 111 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2340 y: -3396 vx: 289 vy: -68 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 16 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 353 y: -2979 vx: 0 vy: 0 extra: 4 extra2: -1
+
+275313
+276313
+277313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 42 enemyScore2: 35 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 865 y: -2692 vx: -188 vy: -45 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2238 y: -3382 vx: -82 vy: 11 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 16 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 353 y: -2979 vx: 0 vy: 0 extra: 3 extra2: -1
+
+278313
+279313
+280313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 43 enemyScore2: 35 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 328 y: -2933 vx: -430 vy: -192 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1765 y: -3287 vx: -379 vy: 76 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 16 unitType: 4 player: -1 mass: -1.0 radius: 800 x: 353 y: -2979 vx: 0 vy: 0 extra: 2 extra2: -1
+
+281313
+282313
+283313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 44 enemyScore2: 36 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 89 y: -3476 vx: -191 vy: -435 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 995 y: -3126 vx: -616 vy: 129 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 17 unitType: 4 player: -1 mass: -1.0 radius: 850 x: 2692 y: -1324 vx: 0 vy: 0 extra: 9 extra2: -1
+
+284313
+285313
+286313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 44 enemyScore2: 36 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 206 y: -3656 vx: 94 vy: -144 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 653 y: -2706 vx: -273 vy: 336 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 17 unitType: 4 player: -1 mass: -1.0 radius: 850 x: 2692 y: -1324 vx: 0 vy: 0 extra: 9 extra2: -1
+
+287313
+288313
+289313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 44 enemyScore2: 36 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 592 y: -3526 vx: 309 vy: 104 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 711 y: -2146 vx: 46 vy: 448 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 17 unitType: 4 player: -1 mass: -1.0 radius: 850 x: 2692 y: -1324 vx: 0 vy: 0 extra: 9 extra2: -1
+
+290313
+291313
+292313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 44 enemyScore2: 36 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 1177 y: -3133 vx: 468 vy: 315 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1126 y: -1545 vx: 332 vy: 481 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 17 unitType: 4 player: -1 mass: -1.0 radius: 850 x: 2692 y: -1324 vx: 0 vy: 0 extra: 9 extra2: -1
+
+293313
+294313
+295313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 44 enemyScore2: 36 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 1902 y: -2511 vx: 580 vy: 497 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 1854 y: -1008 vx: 582 vy: 430 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 17 unitType: 4 player: -1 mass: -1.0 radius: 850 x: 2692 y: -1324 vx: 0 vy: 0 extra: 9 extra2: -1
+
+296313
+297313
+298313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 45 enemyScore2: 37 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 2704 y: -1681 vx: 641 vy: 664 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 2810 y: -719 vx: 765 vy: 231 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 17 unitType: 4 player: -1 mass: -1.0 radius: 850 x: 2692 y: -1324 vx: 0 vy: 0 extra: 7 extra2: -1
+
+299313
+300313
+301313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 46 enemyScore2: 37 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 3220 y: -1387 vx: 399 vy: 136 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 3610 y: -111 vx: 654 vy: 586 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 17 unitType: 4 player: -1 mass: -1.0 radius: 850 x: 2692 y: -1324 vx: 0 vy: 0 extra: 6 extra2: -1
+
+302313
+303313
+304313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 47 enemyScore2: 37 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 3222 y: -1204 vx: 1 vy: 147 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 4023 y: 156 vx: 330 vy: 214 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 17 unitType: 4 player: -1 mass: -1.0 radius: 850 x: 2692 y: -1324 vx: 0 vy: 0 extra: 5 extra2: -1
+
+305313
+306313
+307313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 48 enemyScore2: 37 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 2833 y: -1145 vx: -311 vy: 47 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 4086 y: 73 vx: 50 vy: -67 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 17 unitType: 4 player: -1 mass: -1.0 radius: 850 x: 2692 y: -1324 vx: 0 vy: 0 extra: 4 extra2: -1
+
+308313
+309313
+310313
+Sortie d'erreur :
+
+myscore: 0 enemyScore1: 49 enemyScore2: 37 myRage: 0 enemyRage1: 0 enemyRage2: 0unitCount: 6
+unitId: 0 unitType: 0 player: 0 mass: 0.5 radius: 400 x: 3800 y: 2364 vx: 0 vy: 0 extra: -1 extra2: -1
+unitId: 1 unitType: 0 player: 1 mass: 0.5 radius: 400 x: 2274 y: -1412 vx: -447 vy: -214 extra: -1 extra2: -1
+unitId: 2 unitType: 0 player: 2 mass: 0.5 radius: 400 x: 3853 y: -277 vx: -186 vy: -280 extra: -1 extra2: -1
+unitId: 3 unitType: 4 player: -1 mass: -1.0 radius: 650 x: 314 y: 2983 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 4 unitType: 4 player: -1 mass: -1.0 radius: 650 x: -2741 y: -1220 vx: 0 vy: 0 extra: 5 extra2: -1
+unitId: 17 unitType: 4 player: -1 mass: -1.0 radius: 850 x: 2692 y: -1324 vx: 0 vy: 0 extra: 3 extra2: -1
+
