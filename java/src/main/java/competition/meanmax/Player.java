@@ -1,14 +1,67 @@
 package competition.meanmax;
 
 import java.util.*;
-import java.io.*;
-import java.math.*;
 
 /**
  * Auto-generated code below aims at helping you parse
  * the standard input according to the problem statement.
  **/
 class Player {
+
+    public static class Analyzer {
+        private Board board;
+
+        public Analyzer(Board board) {
+            this.board = board;
+        }
+
+        public String action(Reaper reaper) {
+            return "WAIT";
+        }
+    }
+
+    public static class Board {
+
+        private List<Unit> unitList = new ArrayList<>();
+
+        public void add(Unit unit) {
+            unitList.add(unit);
+        }
+
+        public List<Unit> getUnits() {
+            return unitList;
+        }
+    }
+
+    public static class Unit {
+        protected Position position;
+
+        public Unit(Position position) {
+            this.position = position;
+        }
+    }
+
+    public static class Reaper extends Unit {
+        public Reaper(Position position) {
+            super(position);
+        }
+    }
+
+    public static class Wreck extends Unit {
+        public Wreck(Position position) {
+            super(position);
+        }
+    }
+
+    public static class Position {
+        private int x;
+        private int y;
+
+        public Position(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
+    }
 
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
@@ -51,4 +104,6 @@ class Player {
             System.out.println("WAIT");
         }
     }
+
+
 }
