@@ -20,8 +20,8 @@ public class AnalyzerTest {
     @Test
     public void should_reaper_wait_when_on_wreck() throws Exception {
         //Given
-        Reaper reaper = new Reaper(new Position(0,0));
-        Wreck wreck = new Wreck(new Position(0,0));
+        Reaper reaper = new Reaper(new Position(0,0),0);
+        Wreck wreck = new Wreck(new Position(0,0),0);
 
         board.add(reaper);
         board.add(wreck);
@@ -32,8 +32,8 @@ public class AnalyzerTest {
     @Test
     public void should_reaper_move_on_wreck() throws Exception {
         //Given
-        Reaper reaper = new Reaper(new Position(0,0));
-        Wreck wreck = new Wreck(new Position(600,0));
+        Reaper reaper = new Reaper(new Position(0,0),0);
+        Wreck wreck = new Wreck(new Position(600,0),0);
 
         board.add(reaper);
         board.add(wreck);
