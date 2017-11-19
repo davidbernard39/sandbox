@@ -1,7 +1,6 @@
 package competition.meanmax;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * Auto-generated code below aims at helping you parse
@@ -26,8 +25,16 @@ class Player {
             return move(wreck, 300);
         }
 
-        private String move(Wreck wreck, int acc) {
-            return wreck.position.x + ACTION_SEPARATOR + wreck.position.y + ACTION_SEPARATOR + acc;
+        public String action(Destroyer destroyer) {
+            Tanker tanker = board.nearestTanker(destroyer);
+            if (tanker == null) {
+                return WAIT;
+            }
+            return move(tanker, 300);
+        }
+
+        private String move(Unit target, int acc) {
+            return target.position.x + ACTION_SEPARATOR + target.position.y + ACTION_SEPARATOR + acc;
         }
     }
 
@@ -43,23 +50,23 @@ class Player {
             return unitList;
         }
 
-        public List<Wreck> getWreckList() {
+        private Optional<Unit> nearest(Unit unit, Class targetUnitClass) {
             return unitList
                     .stream()
-                    .filter(Wreck.class::isInstance)
-                    .map(Wreck.class::cast)
-                    .collect(Collectors.toList());
+                    .filter(targetUnitClass::isInstance)
+                    .min(Comparator.comparingDouble(unit::getDistance));
         }
 
         public Wreck nearestWreck(Reaper reaper) {
-            Wreck nearestWreck = null;
-            for (Wreck wreck : getWreckList()) {
-                if (reaper.overlap(wreck)) {
-                    return wreck;
-                }
-                nearestWreck = wreck;
-            }
-            return nearestWreck;
+            return nearest(reaper, Wreck.class)
+                    .map(Wreck.class::cast)
+                    .orElse(null);
+        }
+
+        public Tanker nearestTanker(Destroyer destroyer) {
+            return nearest(destroyer, Tanker.class)
+                    .map(Tanker.class::cast)
+                    .orElse(null);
         }
 
         public Reaper getReaper() {
@@ -70,9 +77,18 @@ class Player {
                     .findFirst()
                     .get();
         }
+
+        public Destroyer getDestroyer() {
+            return unitList
+                    .stream()
+                    .filter(Destroyer.class::isInstance)
+                    .map(Destroyer.class::cast)
+                    .findFirst()
+                    .get();
+        }
     }
 
-    public static class Unit {
+    public static abstract class Unit {
         protected Position position;
         protected int radius;
 
@@ -106,6 +122,18 @@ class Player {
         }
     }
 
+    public static class Destroyer extends Unit {
+        public Destroyer(Position position, int radius) {
+            super(position, radius);
+        }
+    }
+
+    public static class Tanker extends Unit {
+        public Tanker(Position position, int radius) {
+            super(position, radius);
+        }
+    }
+
     public static class Position {
         private int x;
         private int y;
@@ -130,11 +158,11 @@ class Player {
 
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
-        Board board = new Board();
-        Analyzer analyzer = new Analyzer(board);
 
         // game loop
         while (true) {
+            Board board = new Board();
+            Analyzer analyzer = new Analyzer(board);
             int myScore = in.nextInt();
             int enemyScore1 = in.nextInt();
             int enemyScore2 = in.nextInt();
@@ -165,6 +193,10 @@ class Player {
                     board.add(new Reaper(new Position(x, y), radius));
                 } else if (isWreck(unitType)) {
                     board.add(new Wreck(new Position(x, y), radius));
+                } else if (isTanker(unitType)) {
+                    board.add(new Tanker(new Position(x, y), radius));
+                } else if (isMyDestroyer(unitType, player)) {
+                    board.add(new Destroyer(new Position(x, y), radius));
                 }
             }
 
@@ -172,9 +204,17 @@ class Player {
             // To debug: System.err.println("Debug messages...");
 
             System.out.println(analyzer.action(board.getReaper()));
-            System.out.println("WAIT");
+            System.out.println(analyzer.action(board.getDestroyer()));
             System.out.println("WAIT");
         }
+    }
+
+    private static boolean isMyDestroyer(int unitType, int player) {
+        return unitType == 1 && player == 0;
+    }
+
+    private static boolean isTanker(int unitType) {
+        return unitType == 3;
     }
 
     private static boolean isWreck(int unitType) {
@@ -182,7 +222,7 @@ class Player {
     }
 
     private static boolean isMyReaper(int unitType, int player) {
-        return unitType == 0 && player != -1;
+        return unitType == 0 && player == 0;
     }
 
 
