@@ -11,6 +11,7 @@ class Player {
 
     public static class Analyzer {
         public static final String WAIT = "WAIT";
+        public static final String ACTION_SEPARATOR = " ";
         private Board board;
 
         public Analyzer(Board board) {
@@ -19,14 +20,14 @@ class Player {
 
         public String action(Reaper reaper) {
             Wreck wreck = board.nearestWreck(reaper);
-            if (reaper.overlap(wreck)) {
+            if (wreck == null || reaper.overlap(wreck)) {
                 return WAIT;
             }
             return move(wreck, 300);
         }
 
         private String move(Wreck wreck, int acc) {
-            return wreck.position.x + " " + wreck.position.y + " " + acc;
+            return wreck.position.x + ACTION_SEPARATOR + wreck.position.y + ACTION_SEPARATOR + acc;
         }
     }
 

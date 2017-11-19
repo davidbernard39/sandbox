@@ -30,6 +30,16 @@ public class AnalyzerTest {
     }
 
     @Test
+    public void should_reaper_wait_when_no_wreck() throws Exception {
+        //Given
+        Reaper reaper = new Reaper(new Position(0,0),0);
+
+        board.add(reaper);
+
+        assertThat(analyzer.action(reaper)).isEqualTo("WAIT");
+    }
+
+    @Test
     public void should_reaper_move_on_wreck() throws Exception {
         //Given
         Reaper reaper = new Reaper(new Position(0,0),0);
