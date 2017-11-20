@@ -28,11 +28,25 @@ class Player {
         }
 
         public String action(Destroyer destroyer) {
+            Reaper reaper = board.getNearestEnemyReaper(destroyer);
+            if (destroyer.player.rage > 60 && reaper != null && canDestroyerLaunchGrenadeOnReaper(destroyer, reaper)) {
+                return skill(reaper);
+            }
             Tanker tanker = board.nearestTanker(destroyer);
             if (tanker == null) {
                 return WAIT;
             }
             return move(tanker, destroyer.computeAcceleration(tanker.position));
+        }
+
+        private String skill(Unit unit) {
+            return "SKILL" + ACTION_SEPARATOR + (unit.position.x + unit.vx) + ACTION_SEPARATOR + (unit.position.y + unit.vy);
+        }
+
+        private boolean canDestroyerLaunchGrenadeOnReaper(Destroyer destroyer, Reaper reaper) {
+            return destroyer.position.distance(reaper.position) > 1000
+                    && destroyer.position.distance(reaper.position) < 2000
+                    && board.getReaper().position.distance(reaper.position) > 1000;
         }
 
         public String action(Doof doof) {
@@ -218,10 +232,12 @@ class Player {
     public static class GamePlayer {
         protected boolean enemy;
         protected int score;
+        protected int rage;
 
-        public GamePlayer(boolean enemy, int score) {
+        public GamePlayer(boolean enemy, int score, int rage) {
             this.enemy = enemy;
             this.score = score;
+            this.rage = rage;
         }
     }
 
@@ -250,6 +266,7 @@ class Player {
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
         Map<Integer, Integer> scoreMap = new HashMap<>();
+        Map<Integer, Integer> rageMap = new HashMap<>();
 
         // game loop
         while (true) {
@@ -262,9 +279,12 @@ class Player {
             int enemyRage1 = in.nextInt();
             int enemyRage2 = in.nextInt();
             int unitCount = in.nextInt();
-            scoreMap.put(0,myScore);
-            scoreMap.put(1,enemyScore1);
-            scoreMap.put(2,enemyScore2);
+            scoreMap.put(0, myScore);
+            scoreMap.put(1, enemyScore1);
+            scoreMap.put(2, enemyScore2);
+            rageMap.put(0, myRage);
+            rageMap.put(1, enemyRage1);
+            rageMap.put(2, enemyRage2);
             System.err.println("myscore: " + myScore + " enemyScore1: " + enemyScore1 + " enemyScore2: " + enemyScore2
                     + " myRage: " + myRage + " enemyRage1: " + enemyRage1 + " enemyRage2: " + enemyRage2
                     + " unitCount: "
@@ -285,15 +305,15 @@ class Player {
                         + mass + " radius: " + radius + " x: " + x + " y: " + y + " vx: " + vx + " vy: " + vy
                         + " extra: " + extra + " extra2: " + extra2);
                 if (isReaper(unitType)) {
-                    board.add(new Reaper(new Position(x, y), radius, mass, 0, 0, new GamePlayer(isEnemy(player), scoreMap.get(player))));
+                    board.add(new Reaper(new Position(x, y), radius, mass, 0, 0, new GamePlayer(isEnemy(player), scoreMap.get(player), rageMap.get(player))));
                 } else if (isWreck(unitType)) {
-                    board.add(new Wreck(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), 0)));
+                    board.add(new Wreck(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), 0, 0)));
                 } else if (isTanker(unitType)) {
-                    board.add(new Tanker(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), 0)));
+                    board.add(new Tanker(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), 0, 0)));
                 } else if (isDestroyer(unitType)) {
-                    board.add(new Destroyer(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), scoreMap.get(player))));
+                    board.add(new Destroyer(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), scoreMap.get(player), rageMap.get(player))));
                 } else if (isDoof(unitType)) {
-                    board.add(new Doof(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), scoreMap.get(player))));
+                    board.add(new Doof(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), scoreMap.get(player), rageMap.get(player))));
                 }
             }
 
