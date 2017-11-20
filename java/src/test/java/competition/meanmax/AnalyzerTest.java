@@ -20,8 +20,8 @@ public class AnalyzerTest {
     @Test
     public void should_reaper_wait_when_on_wreck() throws Exception {
         //Given
-        Reaper reaper = new Reaper(new Position(0,0),0);
-        Wreck wreck = new Wreck(new Position(0,0),0);
+        Reaper reaper = new Reaper(new Position(0,0),0, 12, 0, 0);
+        Wreck wreck = new Wreck(new Position(0,0),0,12, 0, 0);
 
         board.add(reaper);
         board.add(wreck);
@@ -32,7 +32,7 @@ public class AnalyzerTest {
     @Test
     public void should_reaper_wait_when_no_wreck() throws Exception {
         //Given
-        Reaper reaper = new Reaper(new Position(0,0),0);
+        Reaper reaper = new Reaper(new Position(0,0),0,1, 0, 0);
 
         board.add(reaper);
 
@@ -42,8 +42,8 @@ public class AnalyzerTest {
     @Test
     public void should_reaper_move_on_wreck() throws Exception {
         //Given
-        Reaper reaper = new Reaper(new Position(0,0),0);
-        Wreck wreck = new Wreck(new Position(600,0),0);
+        Reaper reaper = new Reaper(new Position(0,0),0,1, 0, 0);
+        Wreck wreck = new Wreck(new Position(600,0),0,1, 0, 0);
 
         board.add(reaper);
         board.add(wreck);
@@ -54,7 +54,7 @@ public class AnalyzerTest {
     @Test
     public void should_destroyer_wait_when_no_tanker() throws Exception {
         //Given
-        Destroyer destroyer = new Destroyer(new Position(0,0),0);
+        Destroyer destroyer = new Destroyer(new Position(0,0),0,1, 0, 0);
 
         board.add(destroyer);
 
@@ -64,11 +64,11 @@ public class AnalyzerTest {
     @Test
     public void should_destroyer_move_on_tanker() throws Exception {
         //Given
-        Reaper reaper = new Reaper(new Position(0,0),0);
-        Wreck wreck = new Wreck(new Position(600,0),0);
-        Destroyer destroyer = new Destroyer(new Position(-3000, -3000), 0);
-        Tanker tanker1 = new Tanker(new Position(3000, 3000), 0);
-        Tanker tanker2 = new Tanker(new Position(-2000, -2000), 0);
+        Reaper reaper = new Reaper(new Position(0,0),0,1, 0, 0);
+        Wreck wreck = new Wreck(new Position(600,0),0,1, 0, 0);
+        Destroyer destroyer = new Destroyer(new Position(-3000, -3000), 0,1, 0, 0);
+        Tanker tanker1 = new Tanker(new Position(3000, 3000), 0,1, 0, 0);
+        Tanker tanker2 = new Tanker(new Position(-2000, -2000), 0,1, 0, 0);
 
 
         board.add(reaper);

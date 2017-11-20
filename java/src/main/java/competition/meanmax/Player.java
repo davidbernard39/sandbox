@@ -22,7 +22,7 @@ class Player {
             if (wreck == null || reaper.overlap(wreck)) {
                 return WAIT;
             }
-            return move(wreck, 300);
+            return move(wreck, reaper.computeAcceleration(wreck.position));
         }
 
         public String action(Destroyer destroyer) {
@@ -30,7 +30,7 @@ class Player {
             if (tanker == null) {
                 return WAIT;
             }
-            return move(tanker, 300);
+            return move(tanker, destroyer.computeAcceleration(tanker.position));
         }
 
         private String move(Unit target, int acc) {
@@ -91,46 +91,72 @@ class Player {
     public static abstract class Unit {
         protected Position position;
         protected int radius;
+        protected float mass;
+        private int vx;
+        private int vy;
 
-        public Unit(Position position, int radius) {
+        public Unit(Position position, int radius, float mass, int vx, int vy) {
             this.position = position;
             this.radius = radius;
+            this.mass = mass;
+            this.vx = vx;
+            this.vy = vy;
         }
 
         public boolean overlap(Unit unit) {
-            if (getDistance(unit) <= unit.radius) {
+            if (getDistance(unit.position) <= unit.radius) {
                 return true;
             } else {
                 return false;
             }
         }
 
+        private double getDistance(Position position) {
+            return this.position.distance(position);
+        }
+
         private double getDistance(Unit unit) {
-            return this.position.distance(unit.position);
+            return getDistance(unit.position);
+        }
+
+        public Position getNextPositionForMove(Position targetPosition, int acc) {
+            double nextX = vx + position.x + ((targetPosition.x - position.x) * movingCoefficient(targetPosition, acc));
+            double nextY = vy + position.y + ((targetPosition.y - position.y) * movingCoefficient(targetPosition, acc));
+            return new Position((int) Math.round(nextX), (int) Math.round(nextY));
+        }
+
+        private double movingCoefficient(Position targetPosition, int acc) {
+            return (acc/mass)/getDistance(targetPosition);
+        }
+
+
+        public int computeAcceleration(Position targetPosition) {
+            int result = (int) Math.round(mass*getDistance(targetPosition)*(targetPosition.x - vx - this.position.x)/(targetPosition.x - this.position.x));
+            return Math.abs(result) > 300 ? 300 : Math.abs(result);
         }
     }
 
     public static class Reaper extends Unit {
-        public Reaper(Position position, int radius) {
-            super(position, radius);
+        public Reaper(Position position, int radius, float mass, int vx, int vy) {
+            super(position, radius, mass, vx, vy);
         }
     }
 
     public static class Wreck extends Unit {
-        public Wreck(Position position, int radius) {
-            super(position, radius);
+        public Wreck(Position position, int radius, float mass, int vx, int vy) {
+            super(position, radius, mass, vx, vy);
         }
     }
 
     public static class Destroyer extends Unit {
-        public Destroyer(Position position, int radius) {
-            super(position, radius);
+        public Destroyer(Position position, int radius, float mass, int vx, int vy) {
+            super(position, radius, mass, vx, vy);
         }
     }
 
     public static class Tanker extends Unit {
-        public Tanker(Position position, int radius) {
-            super(position, radius);
+        public Tanker(Position position, int radius, float mass, int vx, int vy) {
+            super(position, radius, mass, vx, vy);
         }
     }
 
@@ -190,13 +216,13 @@ class Player {
                         + mass + " radius: " + radius + " x: " + x + " y: " + y + " vx: " + vx + " vy: " + vy
                         + " extra: " + extra + " extra2: " + extra2);
                 if (isMyReaper(unitType, player)) {
-                    board.add(new Reaper(new Position(x, y), radius));
+                    board.add(new Reaper(new Position(x, y), radius, mass, 0, 0));
                 } else if (isWreck(unitType)) {
-                    board.add(new Wreck(new Position(x, y), radius));
+                    board.add(new Wreck(new Position(x, y), radius, mass, vx, vy));
                 } else if (isTanker(unitType)) {
-                    board.add(new Tanker(new Position(x, y), radius));
+                    board.add(new Tanker(new Position(x, y), radius, mass, vx, vy));
                 } else if (isMyDestroyer(unitType, player)) {
-                    board.add(new Destroyer(new Position(x, y), radius));
+                    board.add(new Destroyer(new Position(x, y), radius, mass, vx, vy));
                 }
             }
 
