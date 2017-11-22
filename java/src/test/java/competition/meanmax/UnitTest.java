@@ -8,24 +8,45 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class UnitTest {
 
     @Test
-    public void should_overlap_reaper_wreck_with_same_position() throws Exception {
+    public void should_reaper_be_in_wreck_with_same_position() throws Exception {
         Reaper reaper = new Reaper(new Position(0, 0), 0,1, 0, 0,new GamePlayer(false,0, 0));
         Wreck wreck = new Wreck(new Position(0, 0), 0,1, 0, 0,new GamePlayer(false,0, 0));
-        assertThat(reaper.overlap(wreck)).isTrue();
+        assertThat(reaper.isInUnit(wreck)).isTrue();
     }
 
     @Test
-    public void should_overlap_reaper_wreck_with_position_in_radius() throws Exception {
+    public void should_reaper_be_in_wreck_with_position_in_radius() throws Exception {
         Reaper reaper = new Reaper(new Position(100, 0), 400,1, 0, 0,new GamePlayer(false,0, 0));
         Wreck wreck = new Wreck(new Position(0, 0), 650,1, 0, 0,new GamePlayer(false,0, 0));
-        assertThat(reaper.overlap(wreck)).isTrue();
+        assertThat(reaper.isInUnit(wreck)).isTrue();
     }
 
     @Test
-    public void should_not_overlap_reaper_wreck_with_separate_position() throws Exception {
+    public void should_not_reaper_be_in_wreck_with_separate_position() throws Exception {
         Reaper reaper = new Reaper(new Position(-5000, 400), 400,1, 0, 0,new GamePlayer(false,0, 0));
         Wreck wreck = new Wreck(new Position(4500, -600), 650,1, 0, 0,new GamePlayer(false,0, 0));
-        assertThat(reaper.overlap(wreck)).isFalse();
+        assertThat(reaper.isInUnit(wreck)).isFalse();
+    }
+
+    @Test
+    public void should_wreck_overlap_wreck_when_center_is_in_radius() throws Exception {
+        Wreck wreck1 = new Wreck(new Position(4500, -600), 650,1, 0, 0,new GamePlayer(false,0, 0));
+        Wreck wreck2 = new Wreck(new Position(4400, -500), 650,1, 0, 0,new GamePlayer(false,0, 0));
+        assertThat(wreck1.overlap(wreck2)).isTrue();
+    }
+
+    @Test
+    public void should_wreck_overlap_wreck_when_center_is_not_in_radius() throws Exception {
+        Wreck wreck1 = new Wreck(new Position(4500, -600), 650,1, 0, 0,new GamePlayer(false,0, 0));
+        Wreck wreck2 = new Wreck(new Position(3700, -600), 300,1, 0, 0,new GamePlayer(false,0, 0));
+        assertThat(wreck1.overlap(wreck2)).isTrue();
+    }
+
+    @Test
+    public void should_not_wreck_overlap_wreck_with_separate_position() throws Exception {
+        Wreck wreck1 = new Wreck(new Position(4500, -600), 650,1, 0, 0,new GamePlayer(false,0, 0));
+        Wreck wreck2 = new Wreck(new Position(-4500, 600), 650,1, 0, 0,new GamePlayer(false,0, 0));
+        assertThat(wreck1.overlap(wreck2)).isFalse();
     }
 
     @Test

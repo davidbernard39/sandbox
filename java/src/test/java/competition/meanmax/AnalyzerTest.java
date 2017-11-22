@@ -30,13 +30,15 @@ public class AnalyzerTest {
     }
 
     @Test
-    public void should_reaper_wait_when_no_wreck() throws Exception {
+    public void should_reaper_move_to_destroyer_when_no_wreck() throws Exception {
         //Given
         Reaper reaper = new Reaper(new Position(0,0),0,1, 0, 0,new GamePlayer(false,0, 0));
+        Destroyer destroyer = new Destroyer(new Position(1000,0),0,1, 0, 0,new GamePlayer(false,0, 0));
 
         board.add(reaper);
+        board.add(destroyer);
 
-        assertThat(analyzer.action(reaper)).isEqualTo("WAIT");
+        assertThat(analyzer.action(reaper)).isEqualTo("1000 0 300");
     }
 
     @Test

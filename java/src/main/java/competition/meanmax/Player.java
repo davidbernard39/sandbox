@@ -22,10 +22,13 @@ class Player {
 
         public String action(Reaper reaper) {
             Wreck wreck = board.nearestWreck(reaper);
-            if (wreck == null || reaper.overlap(wreck)) {
+            if (wreck == null) {
+                Destroyer destroyer = board.getDestroyer();
+                return move(reaper, destroyer, reaper.computeAcceleration(destroyer.position));
+            } else if (reaper.isInUnit(wreck)) {
                 return WAIT;
             }
-            return move(reaper,wreck, reaper.computeAcceleration(wreck.position));
+            return move(reaper, wreck, reaper.computeAcceleration(wreck.position));
         }
 
         public String action(Destroyer destroyer) {
@@ -37,7 +40,7 @@ class Player {
             if (tanker == null) {
                 return WAIT;
             }
-            return move(destroyer,tanker, destroyer.computeAcceleration(tanker.position));
+            return move(destroyer, tanker, destroyer.computeAcceleration(tanker.position));
         }
 
         public String action(Doof doof) {
@@ -157,12 +160,12 @@ class Player {
             this.player = player;
         }
 
+        public boolean isInUnit(Unit unit) {
+            return getDistance(unit.position) <= unit.radius;
+        }
+
         public boolean overlap(Unit unit) {
-            if (getDistance(unit.position) <= unit.radius) {
-                return true;
-            } else {
-                return false;
-            }
+            return getDistance(unit.position) <= unit.radius + radius;
         }
 
         private double getDistance(Position position) {
@@ -195,6 +198,7 @@ class Player {
         public static boolean isEnemy(Unit unit) {
             return unit.player.enemy;
         }
+
     }
 
     public static class Reaper extends Unit {
