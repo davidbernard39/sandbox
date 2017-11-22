@@ -103,7 +103,7 @@ public class BoardTest {
         board.add(reaper1);
         board.add(reaper2);
         board.add(reaper3);
-        assertThat(board.getNearestEnemyReaper(myReaper)).isEqualTo(reaper2);
+        assertThat(board.nearestEnemyReaper(myReaper)).isEqualTo(reaper2);
     }
 
 

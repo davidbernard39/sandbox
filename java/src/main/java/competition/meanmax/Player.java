@@ -1,5 +1,6 @@
 package competition.meanmax;
 
+
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -24,38 +25,32 @@ class Player {
             if (wreck == null || reaper.overlap(wreck)) {
                 return WAIT;
             }
-            return move(wreck, reaper.computeAcceleration(wreck.position));
+            return move(reaper,wreck, reaper.computeAcceleration(wreck.position));
         }
 
         public String action(Destroyer destroyer) {
-            Reaper reaper = board.getNearestEnemyReaper(destroyer);
-            if (destroyer.player.rage > 60 && reaper != null && canDestroyerLaunchGrenadeOnReaper(destroyer, reaper)) {
-                return skill(reaper);
+            Reaper enemyReaper = board.nearestEnemyReaper(destroyer);
+            if (enemyReaper != null && destroyer.canLaunchGrenadeOnEnemyReaper(enemyReaper, board.getReaper())) {
+                return skill(enemyReaper);
             }
             Tanker tanker = board.nearestTanker(destroyer);
             if (tanker == null) {
                 return WAIT;
             }
-            return move(tanker, destroyer.computeAcceleration(tanker.position));
+            return move(destroyer,tanker, destroyer.computeAcceleration(tanker.position));
+        }
+
+        public String action(Doof doof) {
+            Reaper enemyReaper = board.getEnemyReaperWithHigherScore();
+            return move(doof, enemyReaper, 300);
         }
 
         private String skill(Unit unit) {
             return "SKILL" + ACTION_SEPARATOR + (unit.position.x + unit.vx) + ACTION_SEPARATOR + (unit.position.y + unit.vy);
         }
 
-        private boolean canDestroyerLaunchGrenadeOnReaper(Destroyer destroyer, Reaper reaper) {
-            return destroyer.position.distance(reaper.position) > 1000
-                    && destroyer.position.distance(reaper.position) < 2000
-                    && board.getReaper().position.distance(reaper.position) > 1000;
-        }
-
-        public String action(Doof doof) {
-            Reaper enemyReaper = board.getEnemyReaperWithHigherScore();
-            return move(enemyReaper, 300);
-        }
-
-        private String move(Unit target, int acc) {
-            return (target.position.x + target.vx) + ACTION_SEPARATOR + (target.position.y + target.vy) + ACTION_SEPARATOR + acc;
+        private String move(Unit fromUnit, Unit target, int acc) {
+            return (target.position.x + target.vx - fromUnit.vx) + ACTION_SEPARATOR + (target.position.y + target.vy - fromUnit.vy) + ACTION_SEPARATOR + acc;
         }
 
     }
@@ -130,7 +125,7 @@ class Player {
                     .collect(Collectors.toList());
         }
 
-        public Reaper getNearestEnemyReaper(Unit fromUnit) {
+        public Reaper nearestEnemyReaper(Unit fromUnit) {
             return getUnitWithMinDistance(fromUnit, getEnemysReaper()
                     .stream())
                     .map(Reaper.class::cast)
@@ -149,8 +144,8 @@ class Player {
         protected Position position;
         protected int radius;
         protected float mass;
-        private int vx;
-        private int vy;
+        protected int vx;
+        protected int vy;
         protected GamePlayer player;
 
         public Unit(Position position, int radius, float mass, int vx, int vy, GamePlayer player) {
@@ -189,8 +184,11 @@ class Player {
         }
 
 
+        // TODO Buggy
         public int computeAcceleration(Position targetPosition) {
-            int result = (int) Math.round(mass * getDistance(targetPosition) * (targetPosition.x - vx - this.position.x) / (targetPosition.x - this.position.x));
+            int accx = (int) Math.round(mass * getDistance(targetPosition) * (targetPosition.x - vx - this.position.x) / (targetPosition.x - this.position.x));
+            int accy = (int) Math.round(mass * getDistance(targetPosition) * (targetPosition.y - vy - this.position.y) / (targetPosition.y - this.position.y));
+            int result = (int) (0.5 * (accx + accy));
             return Math.abs(result) > 300 ? 300 : Math.abs(result);
         }
 
@@ -214,6 +212,12 @@ class Player {
     public static class Destroyer extends Unit {
         public Destroyer(Position position, int radius, float mass, int vx, int vy, GamePlayer player) {
             super(position, radius, mass, vx, vy, player);
+        }
+
+        public boolean canLaunchGrenadeOnEnemyReaper(Reaper enemyReaper, Reaper myReaper) {
+            return player.rage > 60 && position.distance(enemyReaper.position) > 1000
+                    && position.distance(enemyReaper.position) < 2000
+                    && myReaper.position.distance(enemyReaper.position) > 1000;
         }
     }
 
@@ -305,7 +309,7 @@ class Player {
                         + mass + " radius: " + radius + " x: " + x + " y: " + y + " vx: " + vx + " vy: " + vy
                         + " extra: " + extra + " extra2: " + extra2);
                 if (isReaper(unitType)) {
-                    board.add(new Reaper(new Position(x, y), radius, mass, 0, 0, new GamePlayer(isEnemy(player), scoreMap.get(player), rageMap.get(player))));
+                    board.add(new Reaper(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), scoreMap.get(player), rageMap.get(player))));
                 } else if (isWreck(unitType)) {
                     board.add(new Wreck(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), 0, 0)));
                 } else if (isTanker(unitType)) {
