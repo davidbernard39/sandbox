@@ -1,6 +1,7 @@
 package competition.meanmax;
 
 
+
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -21,7 +22,7 @@ class Player {
         }
 
         public String action(Reaper reaper) {
-            Wreck wreck = board.nearestWreck(reaper);
+            Wreck wreck = board.bestWreck(reaper);
             if (wreck == null) {
                 Destroyer destroyer = board.getDestroyer();
                 return move(reaper, destroyer, reaper.computeAcceleration(destroyer.position));
@@ -36,7 +37,7 @@ class Player {
             if (enemyReaper != null && destroyer.canLaunchGrenadeOnEnemyReaper(enemyReaper, board.getReaper())) {
                 return skill(enemyReaper);
             }
-            Tanker tanker = board.nearestTanker(destroyer);
+            Tanker tanker = board.bestTanker(destroyer);
             if (tanker == null) {
                 return WAIT;
             }
@@ -45,6 +46,10 @@ class Player {
 
         public String action(Doof doof) {
             Reaper enemyReaper = board.getEnemyReaperWithHigherScore();
+            Wreck wreck = board.bestWreck(enemyReaper);
+            if (wreck != null && doof.canLaunchOilOnWreck(board.getReaper(), enemyReaper, wreck)) {
+                return skill(wreck);
+            }
             return move(doof, enemyReaper, 300);
         }
 
@@ -100,6 +105,7 @@ class Player {
         }
 
 
+
         public Reaper getReaper() {
             return streamMyUnitsByType(Reaper.class)
                     .map(Reaper.class::cast)
@@ -141,23 +147,91 @@ class Player {
                     .max(Comparator.comparingInt(reaper -> reaper.player.score))
                     .orElse(null);
         }
+
+        public List<Wreck> getAccessibleWrecks(Reaper reaper) {
+            return streamUnitsByType(Wreck.class)
+                    .map(Wreck.class::cast)
+                    .filter(reaper::canMoveOn)
+                    .collect(Collectors.toList());
+        }
+
+        public List<Wreck> getNearestWreckWithoutTanker(Reaper reaper) {
+            List<Wreck> result = new ArrayList<>();
+            List<Wreck> wreckList = streamUnitsByType(Wreck.class)
+                    .sorted(Comparator.comparing(unit -> reaper.position.distance(unit.position)))
+                    .map(Wreck.class::cast)
+                    .collect(Collectors.toList());
+            for (Wreck wreck : wreckList) {
+                boolean willTankerBeOnWreck = false;
+                for (Tanker tanker : streamUnitsByType(Tanker.class).map(Tanker.class::cast).collect(Collectors.toList())) {
+                    if (tanker.overlap(wreck)) {
+                        willTankerBeOnWreck = true;
+                        break;
+                    }
+                }
+                if (!willTankerBeOnWreck) {
+                    result.add(wreck);
+                }
+            }
+            return result;
+        }
+
+        public Tanker bestTanker(Destroyer destroyer) {
+            List<Tanker> tankerList = streamUnitsByType(Tanker.class)
+                    .map(Tanker.class::cast)
+                    .sorted(Comparator.comparing(Tanker::getWaterQuantity).reversed())
+                    .collect(Collectors.toList());
+            for (Tanker tanker : tankerList) {
+                if (destroyer.canMoveOn(tanker)) {
+                    return tanker;
+                }
+            }
+            return nearestTanker(destroyer);
+        }
+
+        public List<Wreck> bestWrecks(Reaper reaper) {
+            return getAccessibleWrecks(reaper)
+                    .stream()
+                    .sorted(Comparator.comparing(Wreck::getWaterQuantity).reversed())
+                    .collect(Collectors.toList());
+        }
+
+        public Wreck bestWreck(Reaper reaper) {
+            List<Wreck> bestWrecks = bestWrecks(reaper);
+            for (Wreck w : bestWrecks) {
+                List<Oil> oilList = streamUnitsByType(Oil.class).map(Oil.class::cast).collect(Collectors.toList());
+                if (oilList.isEmpty()) {
+                    return w;
+                } else {
+                    for (Oil oil : oilList) {
+                        if (!oil.overlap(w)) {
+                            return w;
+                        }
+                    }
+                }
+            }
+            List<Wreck> nearestWrecks = getNearestWreckWithoutTanker(reaper);
+            return nearestWrecks.isEmpty() ? nearestWreck(reaper) : nearestWrecks.get(0);
+        }
     }
 
-    public static abstract class Unit {
+    public static class Unit {
         protected Position position;
         protected int radius;
         protected float mass;
         protected int vx;
         protected int vy;
         protected GamePlayer player;
+        protected int extra;
 
-        public Unit(Position position, int radius, float mass, int vx, int vy, GamePlayer player) {
+        public Unit(Position position, int radius, float mass, int vx, int vy, GamePlayer player, int extra) {
             this.position = position;
             this.radius = radius;
             this.mass = mass;
             this.vx = vx;
             this.vy = vy;
             this.player = player;
+            this.extra = extra;
         }
 
         public boolean isInUnit(Unit unit) {
@@ -199,23 +273,43 @@ class Player {
             return unit.player.enemy;
         }
 
+        public boolean canMoveOn(Unit unitDest) {
+            Position targetAtNextMove = new Position(unitDest.position.x + unitDest.vx, unitDest.position.y + unitDest.vy);
+            Position position = this.getNextPositionForMove(targetAtNextMove, 300);
+            Unit unitInNextPosition = new Unit(position, this.radius,this.mass, this.getNextVxForMove(targetAtNextMove, 300), this.getNextVyForMove(targetAtNextMove, 300),this.player, -1);
+            return unitInNextPosition.isInUnit(unitDest);
+        }
+
+        private int getNextVyForMove(Position targetAtNextMove, int acc) {
+            //TODO
+            return 0;
+        }
+
+        private int getNextVxForMove(Position targetAtNextMove, int acc) {
+            //TODO
+            return 0;
+        }
     }
 
     public static class Reaper extends Unit {
-        public Reaper(Position position, int radius, float mass, int vx, int vy, GamePlayer player) {
-            super(position, radius, mass, vx, vy, player);
+        public Reaper(Position position, int radius, float mass, int vx, int vy, GamePlayer player, int extra) {
+            super(position, radius, mass, vx, vy, player, extra);
         }
     }
 
     public static class Wreck extends Unit {
-        public Wreck(Position position, int radius, float mass, int vx, int vy, GamePlayer player) {
-            super(position, radius, mass, vx, vy, player);
+        public Wreck(Position position, int radius, float mass, int vx, int vy, GamePlayer player, int extra) {
+            super(position, radius, mass, vx, vy, player, extra);
+        }
+
+        public int getWaterQuantity() {
+            return extra;
         }
     }
 
     public static class Destroyer extends Unit {
-        public Destroyer(Position position, int radius, float mass, int vx, int vy, GamePlayer player) {
-            super(position, radius, mass, vx, vy, player);
+        public Destroyer(Position position, int radius, float mass, int vx, int vy, GamePlayer player, int extra) {
+            super(position, radius, mass, vx, vy, player, extra);
         }
 
         public boolean canLaunchGrenadeOnEnemyReaper(Reaper enemyReaper, Reaper myReaper) {
@@ -226,14 +320,29 @@ class Player {
     }
 
     public static class Tanker extends Unit {
-        public Tanker(Position position, int radius, float mass, int vx, int vy, GamePlayer player) {
-            super(position, radius, mass, vx, vy, player);
+        public Tanker(Position position, int radius, float mass, int vx, int vy, GamePlayer player, int extra) {
+            super(position, radius, mass, vx, vy, player, extra);
+        }
+
+        public int getWaterQuantity() {
+            return extra;
         }
     }
 
     public static class Doof extends Unit {
-        public Doof(Position position, int radius, float mass, int vx, int vy, GamePlayer player) {
-            super(position, radius, mass, vx, vy, player);
+        public Doof(Position position, int radius, float mass, int vx, int vy, GamePlayer player, int extra) {
+            super(position, radius, mass, vx, vy, player, extra);
+        }
+
+        public boolean canLaunchOilOnWreck(Reaper myReaper, Reaper enemyReaper, Wreck wreck) {
+            return player.rage > 90 && !myReaper.canMoveOn(wreck)
+                    && enemyReaper.canMoveOn(wreck);
+        }
+    }
+
+    public static class Oil extends Unit {
+        public Oil(Position position, int radius, float mass, int vx, int vy, GamePlayer player, int extra) {
+            super(position, radius, mass, vx, vy, player, extra);
         }
     }
 
@@ -313,15 +422,17 @@ class Player {
                         + mass + " radius: " + radius + " x: " + x + " y: " + y + " vx: " + vx + " vy: " + vy
                         + " extra: " + extra + " extra2: " + extra2);
                 if (isReaper(unitType)) {
-                    board.add(new Reaper(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), scoreMap.get(player), rageMap.get(player))));
+                    board.add(new Reaper(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), scoreMap.get(player), rageMap.get(player)), -1));
                 } else if (isWreck(unitType)) {
-                    board.add(new Wreck(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), 0, 0)));
+                    board.add(new Wreck(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), 0, 0), -1));
                 } else if (isTanker(unitType)) {
-                    board.add(new Tanker(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), 0, 0)));
+                    board.add(new Tanker(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), 0, 0), -1));
                 } else if (isDestroyer(unitType)) {
-                    board.add(new Destroyer(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), scoreMap.get(player), rageMap.get(player))));
+                    board.add(new Destroyer(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), scoreMap.get(player), rageMap.get(player)), -1));
                 } else if (isDoof(unitType)) {
-                    board.add(new Doof(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), scoreMap.get(player), rageMap.get(player))));
+                    board.add(new Doof(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), scoreMap.get(player), rageMap.get(player)), -1));
+                } else if (isOil(unitType)) {
+                    board.add(new Oil(new Position(x, y), radius, mass, vx, vy, new GamePlayer(isEnemy(player), 0,0),extra));
                 }
             }
 
@@ -332,6 +443,10 @@ class Player {
             System.out.println(analyzer.action(board.getDestroyer()));
             System.out.println(analyzer.action(board.getDoof()));
         }
+    }
+
+    private static boolean isOil(int unitType) {
+        return unitType == 6;
     }
 
     private static boolean isDoof(int unitType) {
@@ -357,6 +472,7 @@ class Player {
     private static boolean isReaper(int unitType) {
         return unitType == 0;
     }
+
 
 
 }
