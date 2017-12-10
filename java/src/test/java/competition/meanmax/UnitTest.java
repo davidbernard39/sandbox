@@ -78,6 +78,21 @@ public class UnitTest {
     public void should_compute_acceleration_to_join_position_without_initial_speed() throws Exception {
         Reaper reaper = new Reaper(new Position(4080,950), 400,1.5f, 0, 0,new GamePlayer(false,0, 0), -1);
         assertThat(reaper.computeAcceleration(new Position(4091,1016))).isEqualTo(100);
+        assertThat(reaper.computeAcceleration(new Position(4208,1026))).isEqualTo(223);
+        assertThat(reaper.computeAcceleration(new Position(4252,1052))).isEqualTo(300);
+    }
+
+    @Test
+    public void should_compute_acceleration_to_join_position_with_initial_vx_speed() throws Exception {
+        Reaper reaper = new Reaper(new Position(4080,950), 400,1.5f, 68, 68,new GamePlayer(false,0, 0), -1);
+        //assertThat(reaper.computeAcceleration(new Position(4275,1045))).isEqualTo(280);
+//        assertThat(reaper.computeAcceleration(new Position(4216,1011))).isEqualTo(178);
+
+        Position pos = reaper.getNextPositionForMove(new Position(4275, 1045), 287);
+        System.out.println(pos);
+
+
+//        assertThat(true).isFalse();
     }
 
     @Test

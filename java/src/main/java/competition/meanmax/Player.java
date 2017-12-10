@@ -263,10 +263,14 @@ class Player {
 
         // TODO Buggy
         public int computeAcceleration(Position targetPosition) {
-            int accx = (int) Math.round(mass * getDistance(targetPosition) * (targetPosition.x - vx - this.position.x) / (targetPosition.x - this.position.x));
-            int accy = (int) Math.round(mass * getDistance(targetPosition) * (targetPosition.y - vy - this.position.y) / (targetPosition.y - this.position.y));
-            int result = (int) (0.5 * (accx + accy));
-            return Math.abs(result) > 300 ? 300 : Math.abs(result);
+//            int accx = (int) Math.round(mass * getDistance(targetPosition) * (targetPosition.x - vx - this.position.x) / (targetPosition.x - this.position.x));
+//            int accy = (int) Math.round(mass * getDistance(targetPosition) * (targetPosition.y - vy - this.position.y) / (targetPosition.y - this.position.y));
+//            int result = (int) (0.5 * (accx + accy));
+//            return Math.abs(result) > 300 ? 300 : Math.abs(result);
+            double acc = mass * getDistance(targetPosition);
+            acc = acc * (targetPosition.x + targetPosition.y - this.position.x - this.position.y -vx -vy);
+            acc = acc / (targetPosition.x + targetPosition.y - this.position.x - this.position.y);
+            return (int) Math.round(acc);
         }
 
         public static boolean isEnemy(Unit unit) {
@@ -377,6 +381,14 @@ class Player {
 
         private double getSquaredOrdinateDiff(Position position) {
             return Math.pow(this.y - position.y, 2);
+        }
+
+        @Override
+        public String toString() {
+            return "Position{" +
+                    "x=" + x +
+                    ", y=" + y +
+                    '}';
         }
     }
 
