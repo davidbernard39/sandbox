@@ -1,14 +1,57 @@
 package medium.knight;
 
 import java.util.*;
-import java.io.*;
-import java.math.*;
 
 /**
  * Auto-generated code below aims at helping you parse
  * the standard input according to the problem statement.
  **/
 class Player {
+
+    public static class Board {
+
+        static final String LINE_SEPARATOR = "\n";
+        static final String EMPTY_POSITION = ".";
+        static final String KNIGHT_POSITION = "K";
+        public static final String EMPTY_STRING = "";
+
+        private int width;
+        private int height;
+        private int knightLine;
+        private int knightColumn;
+
+
+        public Board(int width, int height) {
+            super();
+            this.width = width;
+            this.height = height;
+        }
+
+        public void knightAt(int knightLine, int knightColumn) {
+            this.knightLine = knightLine;
+            this.knightColumn = knightColumn;
+        }
+
+        @Override
+        public String toString() {
+            String result = EMPTY_STRING;
+            for (int line = 0; line < height; line++) {
+                for (int column = 0; column < width; column++) {
+                    if (isKnightAt(line, column)) {
+                        result += KNIGHT_POSITION;
+                    } else {
+                        result += EMPTY_POSITION;
+                    }
+                }
+                result += line < height - 1 ? LINE_SEPARATOR : EMPTY_STRING;
+            }
+            return result;
+        }
+
+        private boolean isKnightAt(int line, int column) {
+            return line == knightLine && column == knightColumn;
+        }
+    }
 
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
