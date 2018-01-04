@@ -284,14 +284,16 @@ class Player {
             return unitInNextPosition.isInUnit(unitDest);
         }
 
-        private int getNextVyForMove(Position targetAtNextMove, int acc) {
-            //TODO
-            return 0;
+        public int getNextVyForMove(Position targetAtNextMove, int acc) {
+            double result = this.vy + (targetAtNextMove.y - this.position.y) * movingCoefficient(targetAtNextMove,acc);
+            result *= 0.8;
+            return (int) Math.round(result);
         }
 
-        private int getNextVxForMove(Position targetAtNextMove, int acc) {
-            //TODO
-            return 0;
+        public int getNextVxForMove(Position targetAtNextMove, int acc) {
+            double result = this.vx + (targetAtNextMove.x - this.position.x) * movingCoefficient(targetAtNextMove,acc);
+            result *= 0.8;
+            return (int) Math.round(result);
         }
     }
 
