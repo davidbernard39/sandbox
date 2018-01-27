@@ -1,7 +1,7 @@
 package competition.platinum;
 
 import java.util.*;
-import java.util.List;
+import java.util.stream.Collectors;
 
 
 class Player {
@@ -37,8 +37,12 @@ class Player {
             return this.world.getZone(zoneId);
         }
 
-        public Optional<Zone> firstEmptyZone() {
-            return this.world.firstEmptyZone();
+        public List<Zone> firstEmptyZone(int numberOfZones) {
+            return this.world.firstEmptyZone(numberOfZones);
+        }
+
+        public Optional<Zone> highestValueEmptyZone() {
+            return this.world.highestValueEmptyZone();
         }
     }
 
@@ -53,10 +57,19 @@ class Player {
             return zones.get(zoneId);
         }
 
-        public Optional<Zone> firstEmptyZone() {
+        public List<Zone> firstEmptyZone(int numberOfZones) {
             return zones.entrySet().stream()
                     .filter(entry -> entry.getValue().isEmpty())
                     .map(Map.Entry::getValue)
+                    .limit(numberOfZones)
+                    .collect(Collectors.toList());
+        }
+
+        public Optional<Zone> highestValueEmptyZone() {
+            return zones.entrySet().stream()
+                    .filter(entry -> entry.getValue().isEmpty())
+                    .map(Map.Entry::getValue)
+                    .sorted(Comparator.comparingInt(Zone::getPlatinum).reversed())
                     .findFirst();
         }
     }
@@ -94,6 +107,10 @@ class Player {
 
         public boolean isEmpty() {
             return owner == -1;
+        }
+
+        public int getPlatinum() {
+            return platinumSource;
         }
     }
 
@@ -133,12 +150,12 @@ class Player {
             // Write an action using System.out.println()
             // To debug: System.err.println("Debug messages...");
 
-            MoveStrategy moveWaitStrategy = new MoveWaitStrategy(game);
-            BuyingStrategy buyFirstEmptyZoneStrategy = new BuyFirstEmptyZoneStrategy(game);
+            MoveStrategy moveStrategy = new MoveWaitStrategy(game);
+            BuyingStrategy buyingStrategy = new BuyFirstEmptyZoneStrategy(game);
 
             // first line for movement commands, second line for POD purchase (see the protocol in the statement for details)
-            System.out.println(moveWaitStrategy.move());
-            System.out.println(buyFirstEmptyZoneStrategy.buy());
+            System.out.println(moveStrategy.move());
+            System.out.println(buyingStrategy.buy());
         }
     }
 
@@ -164,14 +181,31 @@ class Player {
         }
 
         public String buy() {
-            Optional<Zone> firstEmptyZone = game.firstEmptyZone();
-            if (firstEmptyZone.isPresent())
-                return "1 " + game.firstEmptyZone().get().zoneId;
-            else
+            List<Zone> firstEmptyZone = game.firstEmptyZone(game.myPlatinum / 20);
+            if (!firstEmptyZone.isEmpty()) {
+                StringJoiner sb = new StringJoiner(" ");
+                for (Zone zone : firstEmptyZone) {
+                    sb.add("1").add(String.valueOf(zone.zoneId));
+                }
+                return sb.toString();
+            } else
                 return "WAIT";
         }
     }
 
+    static class BuyHighValueEmptyZoneStrategy extends GameStrategy implements BuyingStrategy {
+        BuyHighValueEmptyZoneStrategy(Game game) {
+            super(game);
+        }
+
+        public String buy() {
+            Optional<Zone> highestValueEmptyZone = game.highestValueEmptyZone();
+            if (highestValueEmptyZone.isPresent()) {
+                return "1 " + game.highestValueEmptyZone().get().zoneId;
+            }
+            return "WAIT";
+        }
+    }
 
     static class MoveWaitStrategy extends GameStrategy implements MoveStrategy {
         public MoveWaitStrategy(Game game) {

@@ -44,7 +44,7 @@ public class GameTest {
         Zone zone = new Zone(1, 2);
         game.addZone(zone);
 
-        assertThat(game.firstEmptyZone().get()).isEqualTo(zone);
+        assertThat(game.firstEmptyZone(1)).containsExactly(zone);
     }
 
     @Test
@@ -56,6 +56,44 @@ public class GameTest {
         game.addZone(zone1);
         game.addZone(zone2);
 
-        assertThat(game.firstEmptyZone().get()).isEqualTo(zone2);
+        assertThat(game.firstEmptyZone(1)).containsExactly(zone2);
+    }
+
+    @Test
+    public void should_first_empty_zone_return_several_empty_zones() {
+        Game game = new Game();
+        Zone zone1 = new Zone(1, 2);
+        Zone zone2 = new Zone(2,2);
+        game.addZone(zone1);
+        game.addZone(zone2);
+
+        assertThat(game.firstEmptyZone(2)).containsExactly(zone1, zone2);
+    }
+
+    @Test
+    public void should_highest_empty_zone_return_highest_zone() {
+        Game game = new Game();
+        Zone zone1 = new Zone(1, 2);
+        Zone zone2 = new Zone(2,4);
+        Zone zone3 = new Zone(3,3);
+        game.addZone(zone1);
+        game.addZone(zone2);
+        game.addZone(zone3);
+
+        assertThat(game.highestValueEmptyZone().get()).isEqualTo(zone2);
+    }
+
+    @Test
+    public void should_highest_empty_zone_return_highest_zone_empty() {
+        Game game = new Game();
+        Zone zone1 = new Zone(1, 2);
+        Zone zone2 = new Zone(2,4);
+        zone2.setOwner(2);
+        Zone zone3 = new Zone(3,3);
+        game.addZone(zone1);
+        game.addZone(zone2);
+        game.addZone(zone3);
+
+        assertThat(game.highestValueEmptyZone().get()).isEqualTo(zone3);
     }
 }
