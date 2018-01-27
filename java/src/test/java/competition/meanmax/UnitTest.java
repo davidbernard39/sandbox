@@ -1,6 +1,7 @@
 package competition.meanmax;
 
 import competition.meanmax.Player.*;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -64,20 +65,59 @@ public class UnitTest {
 
     @Test
     public void should_predict_next_position_when_moving_without_initial_speed() throws Exception {
-        Reaper reaper = new Reaper(new Position(4080,950), 400,1.5f, 0, 0,new GamePlayer(false,0, 0), -1);
-        assertThat(reaper.getNextPositionForMove(new Position(5106,6920),300)).isEqualToComparingFieldByField(new Position(4114,1147));
+        Reaper reaper = new Reaper(new Position(4316,1222), 400,0.5f, 0, 0,new GamePlayer(false,0, 0), -1);
+        assertThat(reaper.getNextPositionForMove(new Position(2632,1439),300)).isEqualToComparingFieldByField(new Position(3721,1299));
+    }
+
+    @Test
+    public void should_predict_next_vx_when_moving_without_initial_speed() throws Exception {
+        Reaper reaper = new Reaper(new Position(4316,1222), 400,0.5f, 0, 0,new GamePlayer(false,0, 0), -1);
+        assertThat(reaper.getNextVxForMove(new Position(2632,1439),300)).isEqualTo(-476);
+    }
+
+    @Test
+    public void should_predict_next_vy_when_moving_without_initial_speed() throws Exception {
+        Reaper reaper = new Reaper(new Position(4316,1222), 400,0.5f, 0, 0,new GamePlayer(false,0, 0), -1);
+        assertThat(reaper.getNextVyForMove(new Position(2632,1439),300)).isEqualTo(61);
     }
 
     @Test
     public void should_predict_next_position_when_moving_with_initial_speed() throws Exception {
-        Reaper reaper = new Reaper(new Position(4114,1147), 400,1.5f, 24, 138,new GamePlayer(false,0, 0), -1);
-        assertThat(reaper.getNextPositionForMove(new Position(4770,6464),300)).isEqualToComparingFieldByField(new Position(4162,1483));
+        Reaper reaper = new Reaper(new Position(3721,1299), 400,0.5f, -476, 61,new GamePlayer(false,0, 0), -1);
+        assertThat(reaper.getNextPositionForMove(new Position(3108,1378),300)).isEqualToComparingFieldByField(new Position(2650,1437));
+    }
+
+    @Test
+    public void should_predict_next_vx_when_moving_with_initial_speed() throws Exception {
+        Reaper reaper = new Reaper(new Position(3721,1299), 400,0.5f, -476, 61,new GamePlayer(false,0, 0), -1);
+        assertThat(reaper.getNextVxForMove(new Position(3108,1378),300)).isEqualTo(-857);
+    }
+
+    @Test
+    public void should_predict_next_vy_when_moving_with_initial_speed() throws Exception {
+        Reaper reaper = new Reaper(new Position(3721,1299), 400,0.5f, -476, 61,new GamePlayer(false,0, 0), -1);
+        assertThat(reaper.getNextVyForMove(new Position(3108,1378),300)).isEqualTo(110);
     }
 
     @Test
     public void should_compute_acceleration_to_join_position_without_initial_speed() throws Exception {
         Reaper reaper = new Reaper(new Position(4080,950), 400,1.5f, 0, 0,new GamePlayer(false,0, 0), -1);
         assertThat(reaper.computeAcceleration(new Position(4091,1016))).isEqualTo(100);
+        assertThat(reaper.computeAcceleration(new Position(4208,1026))).isEqualTo(223);
+        assertThat(reaper.computeAcceleration(new Position(4252,1052))).isEqualTo(300);
+    }
+
+    @Test
+    public void should_compute_acceleration_to_join_position_with_initial_vx_speed() throws Exception {
+        Reaper reaper = new Reaper(new Position(4080,950), 400,1.5f, 68, 68,new GamePlayer(false,0, 0), -1);
+        //assertThat(reaper.computeAcceleration(new Position(4275,1045))).isEqualTo(280);
+//        assertThat(reaper.computeAcceleration(new Position(4216,1011))).isEqualTo(178);
+
+        Position pos = reaper.getNextPositionForMove(new Position(4275, 1045), 287);
+        System.out.println(pos);
+
+
+//        assertThat(true).isFalse();
     }
 
     @Test
