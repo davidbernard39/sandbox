@@ -10,8 +10,12 @@ class Player {
 
         private int playersNumber;
         private int myId;
-        private Map<Integer, Zone> zones = new HashMap<>();
         private int myPlatinum;
+        private World world;
+
+        public Game() {
+            this.world = new World();
+        }
 
         public void setPlayersNumber(int playersNumber) {
             this.playersNumber = playersNumber;
@@ -21,16 +25,32 @@ class Player {
             this.myId = myId;
         }
 
+        public void setMyPlatinum(int myPlatinum) {
+            this.myPlatinum = myPlatinum;
+        }
+
+        public void addZone(Zone zone) {
+            this.world.addZone(zone);
+        }
+
+        public Zone getZone(int zoneId) {
+            return this.world.getZone(zoneId);
+        }
+
+        public Optional<Zone> firstEmptyZone() {
+            return this.world.firstEmptyZone();
+        }
+    }
+
+    static class World {
+        private Map<Integer, Zone> zones = new HashMap<>();
+
         public void addZone(Zone zone) {
             this.zones.put(zone.zoneId, zone);
         }
 
         public Zone getZone(int zoneId) {
             return zones.get(zoneId);
-        }
-
-        public void setMyPlatinum(int myPlatinum) {
-            this.myPlatinum = myPlatinum;
         }
 
         public Optional<Zone> firstEmptyZone() {
