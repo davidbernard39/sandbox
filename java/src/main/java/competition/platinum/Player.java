@@ -41,8 +41,8 @@ class Player {
             return this.world.firstEmptyZone(numberOfZones);
         }
 
-        public Optional<Zone> highestValueEmptyZone() {
-            return this.world.highestValueEmptyZone();
+        public List<Zone> highestValueEmptyZone(int numberOfZones) {
+            return this.world.highestValueEmptyZone(numberOfZones);
         }
     }
 
@@ -65,12 +65,13 @@ class Player {
                     .collect(Collectors.toList());
         }
 
-        public Optional<Zone> highestValueEmptyZone() {
+        public List<Zone> highestValueEmptyZone(int numberOfZones) {
             return zones.entrySet().stream()
                     .filter(entry -> entry.getValue().isEmpty())
                     .map(Map.Entry::getValue)
                     .sorted(Comparator.comparingInt(Zone::getPlatinum).reversed())
-                    .findFirst();
+                    .limit(numberOfZones)
+                    .collect(Collectors.toList());
         }
     }
 
@@ -151,7 +152,7 @@ class Player {
             // To debug: System.err.println("Debug messages...");
 
             MoveStrategy moveStrategy = new MoveWaitStrategy(game);
-            BuyingStrategy buyingStrategy = new BuyFirstEmptyZoneStrategy(game);
+            BuyingStrategy buyingStrategy = new BuyHighValueEmptyZoneStrategy(game);
 
             // first line for movement commands, second line for POD purchase (see the protocol in the statement for details)
             System.out.println(moveStrategy.move());
@@ -182,14 +183,7 @@ class Player {
 
         public String buy() {
             List<Zone> firstEmptyZone = game.firstEmptyZone(game.myPlatinum / 20);
-            if (!firstEmptyZone.isEmpty()) {
-                StringJoiner sb = new StringJoiner(" ");
-                for (Zone zone : firstEmptyZone) {
-                    sb.add("1").add(String.valueOf(zone.zoneId));
-                }
-                return sb.toString();
-            } else
-                return "WAIT";
+            return getBuyCommand(firstEmptyZone);
         }
     }
 
@@ -199,12 +193,10 @@ class Player {
         }
 
         public String buy() {
-            Optional<Zone> highestValueEmptyZone = game.highestValueEmptyZone();
-            if (highestValueEmptyZone.isPresent()) {
-                return "1 " + game.highestValueEmptyZone().get().zoneId;
-            }
-            return "WAIT";
+            List<Zone> high = game.highestValueEmptyZone(game.myPlatinum / 20);
+            return getBuyCommand(high);
         }
+
     }
 
     static class MoveWaitStrategy extends GameStrategy implements MoveStrategy {
@@ -215,5 +207,16 @@ class Player {
         public String move() {
             return "WAIT";
         }
+    }
+
+    private static String getBuyCommand(List<Zone> zones) {
+        if (!zones.isEmpty()) {
+            StringJoiner sb = new StringJoiner(" ");
+            for (Zone zone : zones) {
+                sb.add("1").add(String.valueOf(zone.zoneId));
+            }
+            return sb.toString();
+        } else
+            return "WAIT";
     }
 }

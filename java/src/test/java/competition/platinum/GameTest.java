@@ -80,7 +80,7 @@ public class GameTest {
         game.addZone(zone2);
         game.addZone(zone3);
 
-        assertThat(game.highestValueEmptyZone().get()).isEqualTo(zone2);
+        assertThat(game.highestValueEmptyZone(1)).containsExactly(zone2);
     }
 
     @Test
@@ -94,6 +94,6 @@ public class GameTest {
         game.addZone(zone2);
         game.addZone(zone3);
 
-        assertThat(game.highestValueEmptyZone().get()).isEqualTo(zone3);
+        assertThat(game.highestValueEmptyZone(1)).containsExactly(zone3);
     }
 }
