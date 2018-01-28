@@ -37,10 +37,6 @@ class Player {
             return this.world.getZone(zoneId);
         }
 
-        public List<Zone> firstEmptyZone(int numberOfZones) {
-            return this.world.firstEmptyZone(numberOfZones);
-        }
-
         public List<Zone> highestValueEmptyZone(int numberOfZones) {
             return this.world.highestValueEmptyZone(numberOfZones);
         }
@@ -55,14 +51,6 @@ class Player {
 
         public Zone getZone(int zoneId) {
             return zones.get(zoneId);
-        }
-
-        public List<Zone> firstEmptyZone(int numberOfZones) {
-            return zones.entrySet().stream()
-                    .filter(entry -> entry.getValue().isEmpty())
-                    .map(Map.Entry::getValue)
-                    .limit(numberOfZones)
-                    .collect(Collectors.toList());
         }
 
         public List<Zone> highestValueEmptyZone(int numberOfZones) {
@@ -176,17 +164,6 @@ class Player {
         String move();
     }
 
-    static class BuyFirstEmptyZoneStrategy extends GameStrategy implements BuyingStrategy {
-        public BuyFirstEmptyZoneStrategy(Game game) {
-            super(game);
-        }
-
-        public String buy() {
-            List<Zone> firstEmptyZone = game.firstEmptyZone(game.myPlatinum / 20);
-            return getBuyCommand(firstEmptyZone);
-        }
-    }
-
     static class BuyHighValueEmptyZoneStrategy extends GameStrategy implements BuyingStrategy {
         BuyHighValueEmptyZoneStrategy(Game game) {
             super(game);
@@ -196,7 +173,6 @@ class Player {
             List<Zone> high = game.highestValueEmptyZone(game.myPlatinum / 20);
             return getBuyCommand(high);
         }
-
     }
 
     static class MoveWaitStrategy extends GameStrategy implements MoveStrategy {
