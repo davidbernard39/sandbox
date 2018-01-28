@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 class Player {
 
     static class Game {
+        public static final int POD_COST = 20;
 
         private int playersNumber;
         private int myId;
@@ -39,6 +40,10 @@ class Player {
 
         public List<Zone> highestValueEmptyZone(int numberOfZones) {
             return this.world.highestValueEmptyZone(numberOfZones);
+        }
+
+        public int podsPurchaseCapacity() {
+            return myPlatinum / POD_COST;
         }
     }
 
@@ -123,6 +128,7 @@ class Player {
             zone1.addNeighbor(zone2);
         }
 
+        boolean initialTurn = true;
         // game loop
         while (true) {
             game.setMyPlatinum(in.nextInt()); // my available Platinum
@@ -140,7 +146,13 @@ class Player {
             // To debug: System.err.println("Debug messages...");
 
             MoveStrategy moveStrategy = new MoveWaitStrategy(game);
-            BuyingStrategy buyingStrategy = new BuyHighValueEmptyZoneStrategy(game);
+            BuyingStrategy buyingStrategy;
+            if (initialTurn) {
+                buyingStrategy = new BuyInitialStrategy(game);
+                initialTurn = false;
+            } else {
+                buyingStrategy = new BuyHighValueEmptyZoneStrategy(game);
+            }
 
             // first line for movement commands, second line for POD purchase (see the protocol in the statement for details)
             System.out.println(moveStrategy.move());
@@ -170,8 +182,41 @@ class Player {
         }
 
         public String buy() {
-            List<Zone> high = game.highestValueEmptyZone(game.myPlatinum / 20);
-            return getBuyCommand(high);
+            List<Zone> high = game.highestValueEmptyZone(game.podsPurchaseCapacity());
+            if (!high.isEmpty()) {
+                StringJoiner sb = new StringJoiner(" ");
+                for (Zone zone : high) {
+                    sb.add("1").add(String.valueOf(zone.zoneId));
+                }
+                return sb.toString();
+            } else {
+                return "WAIT";
+            }
+        }
+    }
+
+    static class BuyInitialStrategy extends GameStrategy implements BuyingStrategy {
+        BuyInitialStrategy(Game game) {
+            super(game);
+        }
+
+        public String buy() {
+            int purchaseCapacity = game.podsPurchaseCapacity();
+            List<Zone> high = game.highestValueEmptyZone(purchaseCapacity);
+            StringJoiner sb = new StringJoiner(" ");
+            for (Zone zone : high) {
+                if (purchaseCapacity > 0) {
+                    if (zone.platinumSource == 6) {
+                        sb.add("2");
+                        purchaseCapacity -= 2;
+                    } else {
+                        sb.add("1");
+                        purchaseCapacity--;
+                    }
+                    sb.add(String.valueOf(zone.zoneId));
+                }
+            }
+            return sb.toString();
         }
     }
 
@@ -183,16 +228,5 @@ class Player {
         public String move() {
             return "WAIT";
         }
-    }
-
-    private static String getBuyCommand(List<Zone> zones) {
-        if (!zones.isEmpty()) {
-            StringJoiner sb = new StringJoiner(" ");
-            for (Zone zone : zones) {
-                sb.add("1").add(String.valueOf(zone.zoneId));
-            }
-            return sb.toString();
-        } else
-            return "WAIT";
     }
 }
